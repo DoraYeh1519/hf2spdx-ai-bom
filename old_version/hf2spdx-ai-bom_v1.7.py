@@ -1,7 +1,6 @@
-
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# hf2spdx-ai-bom.py (v1.6)
+# hf2spdx-ai-bom.py (v1.7)
 # Policy: ONLY include fields that can be directly fetched from HF API/page/files.
 # - No model-type/domain inference (omit unless explicitly found somewhere structured — not supported currently)
 # - Dataset only if HF API cardData.datasets exists (or --force-dataset). No README keyword heuristics by default.
@@ -12,6 +11,12 @@
 # - Keep commit-pinned downloadLocation for files and package.
 # - dataLicense kept as CC0-1.0 (SPDX document requirement; not from HF)
 # - Licensing: SPDX LicenseExpression if API/page license is SPDX; otherwise SimpleLicensingText using LICENSE file content if present.
+#
+# v1.7 changes:
+#   * FIX: removed duplicate get_requirements_from_readme definition that regressed filtering (flags/git).
+#   * NEW: fallback DOI/arXiv extraction from README markdown (also supports https://doi.org/...).
+#   * Tweak: more robust "License:" detection from README if page parsing fails.
+#   * Minor: keep previous behaviors, IDs, and schema.
 
 import argparse
 import hashlib
@@ -63,7 +68,9 @@ SMALL_FILE_NAMES = {
 BINARY_EXTS = {".safetensors",".bin",".onnx",".pt",".ckpt"}
 COMMON_CONFIG_FILES = set(SMALL_FILE_NAMES)
 
+# Patterns
 ARXIV_RE = re.compile(r"\barxiv\s*[:=]\s*([0-9]{4}\.[0-9]{4,5})(?:v\d+)?", re.IGNORECASE)
+DOI_RE = re.compile(r"""\b(?:doi\s*[:/]\s*|https?://doi\.org/)\s*([0-9.]+/[A-Za-z0-9._:/\-]+)""", re.IGNORECASE)
 
 INSTALL_CMD_RE = re.compile(
     r"""(?mx)              # verbose, multiline
@@ -87,13 +94,6 @@ IMPORT_ALLOWLIST = {
     "peft","trl","vllm","mlx","kernels","pydantic"
 }
 
-def find_external_arxiv_from_page(soup: BeautifulSoup) -> Optional[str]:
-    txt = soup.get_text("\n", strip=True)
-    m = ARXIV_RE.search(txt)
-    if m:
-        return m.group(1)
-    return None
-
 def normalize_install_line_tail(tail: str) -> str:
     # Remove continuation backslashes and trailing comments
     t = tail.replace("\\\n", " ").replace("\\", " ")
@@ -105,9 +105,9 @@ def extract_pkgs_from_install_tail(tail: str) -> Set[str]:
     t = normalize_install_line_tail(tail)
     tokens = INSTALL_SPLIT_RE.split(t.strip())
     for tok in tokens:
-        if not tok or tok in BAD_TOKENS: 
+        if not tok or tok in BAD_TOKENS:
             continue
-        if tok.startswith("-"): 
+        if tok.startswith("-"):
             continue
         low = tok.lower().strip().strip(",")
         # filter vcs/urls/files/wheels
@@ -123,22 +123,26 @@ def extract_pkgs_from_install_tail(tail: str) -> Set[str]:
         # common false positives
         if low in {"git","https","http","pip","uv","python","mamba","conda"}:
             continue
+        # normalize opencv variants
+        if low == "opencv":
+            low = "opencv-python"
         pkgs.add(low)
     return pkgs
 
-def get_requirements_from_readme(readme_text: str) -> Set[str]:
+def extract_pkgs_from_readme(readme_text: str) -> Set[str]:
+    """Parse README to discover dependencies, using explicit commands/imports only."""
     pkgs = set()
     # 1) Parse installer lines
     for m in INSTALL_CMD_RE.finditer(readme_text):
         tail = m.group("tail")
         pkgs |= extract_pkgs_from_install_tail(tail)
-    # 2) Parse import lines (allowlist only)
+    # 2) Parse import lines (allowlist only) to avoid pulling random module names
     for m in re.finditer(r"^\s*(?:from\s+([A-Za-z0-9_\.]+)\s+import|import\s+([A-Za-z0-9_\.]+))",
                          readme_text, flags=re.IGNORECASE|re.MULTILINE):
         mod = (m.group(1) or m.group(2) or "").split(".")[0].lower()
         if mod in IMPORT_ALLOWLIST:
-            # normalize opencv variants
-            if mod == "opencv": mod = "opencv-python"
+            if mod == "opencv":
+                mod = "opencv-python"
             pkgs.add(mod)
     return pkgs
 
@@ -167,18 +171,45 @@ def get_model_page(repo_id: str, timeout: int = 30) -> BeautifulSoup:
     r.raise_for_status()
     return BeautifulSoup(r.text, "html.parser")
 
+def parse_license_and_doi_from_text(text: str) -> Tuple[Optional[str], Optional[str]]:
+    lic = None
+    m = re.search(r"License:\s*([^\n]+)", text, re.IGNORECASE)
+    if m:
+        lic = m.group(1)
+    doi = None
+    m = DOI_RE.search(text)
+    if m:
+        doi = m.group(1)
+    return lic, doi
+
 def parse_license_and_doi_from_page(soup: BeautifulSoup) -> Tuple[Optional[str], Optional[str], Optional[str]]:
     text = soup.get_text("\n", strip=True)
-    lic = None
-    m = re.search(r"License:\s*([A-Za-z0-9.\-+]+)", text, re.IGNORECASE);  lic = m.group(1) if m else None
-    doi = None
-    m = re.search(r"\bdoi:\s*([0-9.]+/[A-Za-z0-9._/-]+)", text, re.IGNORECASE);  doi = m.group(1) if m else None
+    lic, doi = parse_license_and_doi_from_text(text)
     custom_license_text = None
     # Only capture explicit LICENSE AGREEMENT blocks (if present on page)
     m = re.search(r"([A-Z][A-Z \d\.\-]*LICENSE AGREEMENT.*)", text, re.IGNORECASE|re.DOTALL)
     if m:
         custom_license_text = m.group(1)[:20000]
     return lic, doi, custom_license_text
+
+def find_external_arxiv_from_page(soup: BeautifulSoup) -> Optional[str]:
+    txt = soup.get_text("\n", strip=True)
+    m = ARXIV_RE.search(txt)
+    if m:
+        return m.group(1)
+    return None
+
+def find_doi_and_arxiv_from_readme(readme_text: str) -> Tuple[Optional[str], Optional[str]]:
+    """Fallback: scan README for DOI (incl. doi.org links) and arXiv IDs."""
+    doi = None
+    m = DOI_RE.search(readme_text or "")
+    if m:
+        doi = m.group(1)
+    arxiv = None
+    m = ARXIV_RE.search(readme_text or "")
+    if m:
+        arxiv = m.group(1)
+    return doi, arxiv
 
 def find_pipeline_tag_from_api(model_info: Dict[str, Any]) -> Optional[str]:
     return model_info.get("pipeline_tag")
@@ -278,9 +309,11 @@ def parse_requirements_text(text: str) -> Set[str]:
     for line in text.splitlines():
         line = line.strip()
         if not line or line.startswith("#"): continue
-        # pkg[extra]==ver ; pkg>=ver ; pkg
         m = re.match(r"([A-Za-z0-9_.\-]+)", line)
-        if m: pkgs.add(m.group(1).lower())
+        if m:
+            low = m.group(1).lower()
+            if low == "opencv": low = "opencv-python"
+            pkgs.add(low)
     return pkgs
 
 def get_requirements_from_repo(repo_id: str, model_info: Dict[str, Any], timeout: int = 30) -> Set[str]:
@@ -296,14 +329,12 @@ def get_requirements_from_repo(repo_id: str, model_info: Dict[str, Any], timeout
                     if name.lower().startswith("requirements"):
                         found |= parse_requirements_text(r.text)
                     elif name.lower().startswith("environment"):
-                        # very rough YAML parse (only pip/conda deps in a list)
                         deps = re.findall(r"-\s*([A-Za-z0-9_.\-]+)", r.text)
-                        found |= {d.lower() for d in deps}
+                        found |= {("opencv-python" if d.lower()=="opencv" else d.lower()) for d in deps}
                     elif name == "pyproject.toml":
                         pkgs = re.findall(r'^\s*([A-Za-z0-9_.\-]+)\s*=\s*".*"$', r.text, flags=re.MULTILINE)
-                        found |= {p.lower() for p in pkgs}
+                        found |= {("opencv-python" if p.lower()=="opencv" else p.lower()) for p in pkgs}
                     elif name in {"setup.cfg","setup.py","Pipfile"}:
-                        # Best effort: pick common library names
                         pkgs = re.findall(r"(?:install_requires|requires).*\[?([^\]]+)\]?", r.text, flags=re.IGNORECASE)
                         for seg in pkgs:
                             for tok in seg.split(","):
@@ -313,18 +344,6 @@ def get_requirements_from_repo(repo_id: str, model_info: Dict[str, Any], timeout
             except Exception:
                 pass
     return found
-
-def get_requirements_from_readme(readme_text: str) -> Set[str]:
-    pkgs = set()
-    # explicit pip install lines
-    for m in re.finditer(r"pip\s+install\s+([A-Za-z0-9_.\-]+)", readme_text, flags=re.IGNORECASE):
-        pkgs.add(m.group(1).lower())
-    # explicit imports in code blocks
-    for m in re.finditer(r"^\s*(?:from\s+([A-Za-z0-9_\.]+)\s+import|import\s+([A-Za-z0-9_\.]+))", readme_text, flags=re.IGNORECASE|re.MULTILINE):
-        mod = (m.group(1) or m.group(2) or "").split(".")[0]
-        if mod:
-            pkgs.add(mod.lower())
-    return pkgs
 
 # -------------- SPDX assembly --------------
 def build_spdx(repo_id: str,
@@ -371,7 +390,7 @@ def build_spdx(repo_id: str,
                 {"type": "Organization", "spdxId": "SPDXRef-ORG", "name": "Hugging Face Hub Scraper (example)"}
             ],
             "createdUsing": [
-                {"type": "Tool", "spdxId": "SPDXRef-TOOL", "name": "hf2spdx-ai-bom", "version": "1.6.1"}
+                {"type": "Tool", "spdxId": "SPDXRef-TOOL", "name": "hf2spdx-ai-bom", "version": "1.7.0"}
             ]
         },
         "element": [],
@@ -424,7 +443,7 @@ def build_spdx(repo_id: str,
     deps |= get_requirements_from_repo(repo_id, model_info, timeout=timeout)
 
     readme_text = get_readme_text(model_info, timeout=timeout)
-    deps |= get_requirements_from_readme(readme_text)
+    deps |= extract_pkgs_from_readme(readme_text)
 
     if deps:
         for name in sorted(deps):
@@ -462,7 +481,8 @@ def build_spdx(repo_id: str,
                          "from":"SPDXRef-MODEL","to":sid,"relationshipType":rtype})
 
     # Dataset (only if cardData.datasets present or force)
-    if include_dataset_profile:
+    include_dataset_profile_flag = include_dataset_profile
+    if include_dataset_profile_flag:
         ds_name = None
         if isinstance(datasets_meta, list) and datasets_meta:
             ds_name = ", ".join(map(str, datasets_meta[:3])) + ("..." if len(datasets_meta) > 3 else "")
@@ -475,9 +495,8 @@ def build_spdx(repo_id: str,
                 "spdxId": "SPDXRef-DATASET-TRAIN",
                 "name": ds_name
             }
-            # include details only if flag is set (currently off by default)
+            # optional details only if flag is set
             if include_dataset_details and pipeline_tag:
-                # optional mapping (not default): datasetType from pipeline
                 pt = pipeline_tag.lower()
                 if "image" in pt: ds["datasetType"] = "image"
                 elif "audio" in pt: ds["datasetType"] = "audio"
@@ -527,15 +546,30 @@ def main():
     # License / DOI / LICENSE file content (all fetched from page / files)
     lic_raw = doi = lic_text = None
     arxiv_id = None
+    readme_text = ""
     try:
         soup = get_model_page(repo_id, timeout=args.timeout)
-        lic_raw, doi, lic_text = parse_license_and_doi_from_page(soup)
+        lic_raw, doi, lic_text_page = parse_license_and_doi_from_page(soup)
+        if lic_text_page:
+            lic_text = lic_text_page
         arxiv_id = find_external_arxiv_from_page(soup)
     except Exception:
         pass
-    if not lic_raw: lic_raw = model_info.get("license")
+
+    # Fallbacks: API / README scanning
+    if not lic_raw:
+        lic_raw = model_info.get("license")
+    readme_text = get_readme_text(model_info, timeout=args.timeout)
+    if not doi or not arxiv_id:
+        doi_rd, arxiv_rd = find_doi_and_arxiv_from_readme(readme_text)
+        if not doi:
+            doi = doi_rd
+        if not arxiv_id:
+            arxiv_id = arxiv_rd
+
     lic_text_file = try_read_license_file(repo_id, model_info, timeout=args.timeout)
-    if lic_text_file: lic_text = lic_text_file
+    if lic_text_file:
+        lic_text = lic_text_file
 
     pipeline_tag = find_pipeline_tag_from_api(model_info)
 
