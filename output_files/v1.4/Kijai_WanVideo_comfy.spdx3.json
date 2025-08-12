@@ -1,0 +1,2591 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "type": "SpdxDocument",
+  "spdxId": "SPDXRef-DOCUMENT",
+  "name": "AI-BOM for Kijai/WanVideo_comfy",
+  "profileConformance": [
+    "core",
+    "software",
+    "simpleLicensing",
+    "ai"
+  ],
+  "dataLicense": {
+    "type": "LicenseExpression",
+    "spdxId": "SPDXRef-DATA-LICENSE",
+    "licenseExpression": "CC0-1.0"
+  },
+  "creationInfo": {
+    "type": "CreationInfo",
+    "created": "2025-08-12T03:09:19Z",
+    "specVersion": "3.0.1",
+    "createdBy": [
+      {
+        "type": "Organization",
+        "spdxId": "SPDXRef-ORG",
+        "name": "Hugging Face Hub Scraser (example)"
+      }
+    ],
+    "createdUsing": [
+      {
+        "type": "Tool",
+        "spdxId": "SPDXRef-TOOL",
+        "name": "hf2spdx-ai-bom",
+        "version": "1.4.0"
+      }
+    ]
+  },
+  "element": [
+    {
+      "type": "AIPackage",
+      "spdxId": "SPDXRef-MODEL",
+      "name": "Kijai/WanVideo_comfy",
+      "description": "Model from Kijai/WanVideo_comfy",
+      "packageVersion": "8be53242eddc48f8cfd31937abd426e1095e1ad9",
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/tree/8be53242eddc48f8cfd31937abd426e1095e1ad9",
+      "standardCompliance": [],
+      "typeOfModel": "Transformer",
+      "domain": [
+        "NLP"
+      ],
+      "hyperparameter": {},
+      "modelExplainability": null,
+      "informationAboutTraining": "Not specified",
+      "modelDataPreprocessing": "Not specified",
+      "metric": [],
+      "safetyRiskAssessment": [],
+      "useSensitivePersonalInformation": false,
+      "energyConsumption": []
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0000",
+      "name": ".gitattributes",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/.gitattributes"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0001",
+      "name": "EchoShot/Wan2_1-T2V-1-3B-EchoShot_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "39949b380b099dea80018d5d13aa999c20c5c5c4b5f4f069db3453dfd3a0fccf"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/EchoShot/Wan2_1-T2V-1-3B-EchoShot_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0002",
+      "name": "EchoShot/Wan2_1_EchoShot_1_3B_lora_rank_128_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "cce791240ef446231f6d3b04b0063d8bd5f65a930065f2909e02fccfd76dc3df"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/EchoShot/Wan2_1_EchoShot_1_3B_lora_rank_128_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0003",
+      "name": "FastWan/FastWan_T2V_14B_480p_lora_rank_128_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "93fe4efb5198710843de9843091e15a4a967702f62f169135b73be51884fb7d7"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/FastWan/FastWan_T2V_14B_480p_lora_rank_128_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0004",
+      "name": "FastWan/FastWan_T2V_14B_480p_lora_rank_16_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "d7a286127a03e34859bfeed1f86e3d6d000a84ef2ffbc3588aea1594a7549d62"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/FastWan/FastWan_T2V_14B_480p_lora_rank_16_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0005",
+      "name": "FastWan/FastWan_T2V_14B_480p_lora_rank_64_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "9b01405a073970729a25861967de3e6450912d1238a638a13f2b85e897940b89"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/FastWan/FastWan_T2V_14B_480p_lora_rank_64_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0006",
+      "name": "FastWan/Wan2_2-TI2V-5B-FastWanFullAttn_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "5f464f043fab64d43e61d6ee162316a445209c066027c4d8082d265b74ecd328"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/FastWan/Wan2_2-TI2V-5B-FastWanFullAttn_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0007",
+      "name": "FastWan/Wan2_2_5B_FastWanFullAttn_lora_rank_128_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "79290493711b022e1c6e655d803715cd8a91a75cdb139856cad46f354e2f681c"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/FastWan/Wan2_2_5B_FastWanFullAttn_lora_rank_128_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0008",
+      "name": "Fun/Wan2.1-Fun-Control-14B_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "caeadb65e6357e423eddad3335dfd6a8da75dbc87784a32393de84e1a961084e"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Fun/Wan2.1-Fun-Control-14B_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0009",
+      "name": "Fun/Wan2.1-Fun-Control-14B_fp8_e5m2.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "de2d891aed386e5712c0dd6daada881129f89c23269892dfe057c7ba35a48375"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Fun/Wan2.1-Fun-Control-14B_fp8_e5m2.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0010",
+      "name": "Fun/Wan2.1-Fun-InP-14B_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "14d4d8766938d811d2b49f0a63a65688755d84ea581ae5bf4c4de6989147dd9d"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Fun/Wan2.1-Fun-InP-14B_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0011",
+      "name": "Fun/Wan2.1-Fun-InP-14B_fp8_e5m2.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "dee657524706db652e249aba7e3ca149b5006dcc483fba40f5b0d58ac1de2a36"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Fun/Wan2.1-Fun-InP-14B_fp8_e5m2.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0012",
+      "name": "Fun/Wan2_1-Fun-V1_1-14B-Control-Camera_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "44fb0cd28b22e5f3fe71ec9604e1e03c83cb6b15cf0353a7f2b77bc316fafcc7"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Fun/Wan2_1-Fun-V1_1-14B-Control-Camera_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0013",
+      "name": "Fun/Wan2_1-Fun-V1_1-14B-Control_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "5ba304241104beaf834c954aa759c2c517387cf5ee788fcc0bf5b61840be3c39"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Fun/Wan2_1-Fun-V1_1-14B-Control_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0014",
+      "name": "Lightx2v/README.md",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "9b23cbbac3e5d80770ac458af93ddbb9cf92821aeb241ec7d1d0ed0d2f0a9e4e"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/README.md"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0015",
+      "name": "Lightx2v/lightx2v_14B_T2V_cfg_step_distill_lora_adaptive_rank_quantile_0.15_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "2a7e5419ad4a4954eb7344bbdb85a86f1c989534a16fd961e769c4b812612995"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/lightx2v_14B_T2V_cfg_step_distill_lora_adaptive_rank_quantile_0.15_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0016",
+      "name": "Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank128_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "5c324ada09cfa447844f5d9a57240463a515de38270ef40c7513d74be3e64e72"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank128_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0017",
+      "name": "Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank16_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "aa397a5c80d0b4cc850f5a246f392727fd2e6a8b8e938b2f8f456c4a4b1d9106"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank16_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0018",
+      "name": "Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank256_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "f974aced60f1d833eca0f5d6851346fbb6eacc307c6371555b565f5617fe3859"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank256_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0019",
+      "name": "Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank32_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "f501375c1a4e34533fa1c08360059f8f849ebddd829ff5853e551c3fea991368"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank32_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0020",
+      "name": "Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank4_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "134813519e925d77c89ad44f47fc52fdc67ab425a5467c142f2152a110583ed7"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank4_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0021",
+      "name": "Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "85c4a61c30e0497aa44b91d93a893b624708461a56fe5485183b28fa07e2dfb3"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0022",
+      "name": "Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank8_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "2a67949a74dbab27e0fbda022093e2b01bdc14a7ab075c00eb7bc2b5a1060189"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank8_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0023",
+      "name": "Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank128_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "ef33de1ae634c5f583920b38748553cb2e68f4b811be2ccabde20aa9affb5e21"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank128_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0024",
+      "name": "Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank16_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "093cb0e3ba32e68992047fb9982f0ad5e3e00fb0aa01a1dc4884215c60e54597"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank16_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0025",
+      "name": "Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank256_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "0bda20598ece84b0b2f2385204e1f2e32b1fd2e2648662021be832fe1f227fab"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank256_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0026",
+      "name": "Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank32_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "78a7f8159726dd086e831aa428bc61eb0279dffe547e493641fe7cc40b5750ef"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank32_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0027",
+      "name": "Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank4_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "91425f65cb54a5dd3e587a5cf53c1417ab70ed8a764956a5405e7ba0af75171b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank4_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0028",
+      "name": "Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank64_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "37d49218544b9e0bfb8e831d1399f451fbc5068aff6474f42a90c928363c3573"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank64_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0029",
+      "name": "Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank8_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "f76268dff51ec282b2e1d3a768d5ee0d613fec0340612a1ea23b24de894e0beb"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank8_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0030",
+      "name": "Lightx2v/lightx2v_lora_rank_comparison.mp4",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Lightx2v/lightx2v_lora_rank_comparison.mp4"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0031",
+      "name": "Phantom-Wan-14B_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "ee7197ed0b69e362319b14482737a6b4a3828d3bac75d3d902ddcac07781ea78"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Phantom-Wan-14B_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0032",
+      "name": "Phantom-Wan-14B_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "205c2924aadcd4e1312d6aac0b4cfba80eeea33db99419b113c10eec4810cabc"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Phantom-Wan-14B_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0033",
+      "name": "Phantom-Wan-1_3B_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "d85e956ca0f71f8468da07e4d66e3482aba003e16bab46ddc3b69b3757219ee2"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Phantom-Wan-1_3B_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0034",
+      "name": "Phantom-Wan-1_3B_fp32.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "a309d915b8755a74315870b21598a57f248cd13fd3bd958666dbffdd57ee592e"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Phantom-Wan-1_3B_fp32.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0035",
+      "name": "Pusa/Wan21_PusaV1_LoRA_14B_rank512_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "a510b5562e05efa831127bd6a6b3aecf1c4747cffdddcc0b28f88c0667ef1694"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Pusa/Wan21_PusaV1_LoRA_14B_rank512_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0036",
+      "name": "Qwen/Qwen2.5_3B_instruct_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "4d34f42cb1a79e766dc6a5234205b462a9306ac2e360d19faf09a951cafffe46"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Qwen/Qwen2.5_3B_instruct_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0037",
+      "name": "Qwen/Qwen2.5_7B_instruct_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "c8f5aa1b3293e01920382648b804df1d84e0655b3fce71619071fcd7fbecc918"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Qwen/Qwen2.5_7B_instruct_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0038",
+      "name": "README.md",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "7bb08cdd979a44ae4c71118450bfd8027ca5ff1cb28d7f94e7062ad1710e3051"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/README.md"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0039",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-DF-14B-540P_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "a677c706a481e5eabac2945c899d9953a83693271bf02a167a90d58c315f877f"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-DF-14B-540P_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0040",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-DF-14B-540P_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "c17414440ee1810b1adebf1464d1f579366651044c1b5fb7eb84712b04213d7c"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-DF-14B-540P_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0041",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-DF-14B-720P_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "794790f8f4b513eebe13c329287fba2d0f7f0d29721bc005dfab57a0daaeb07d"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-DF-14B-720P_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0042",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-DF-14B-720P_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "39d81afa9fd7b9a4c240c8c36a7e0ac3b35aa68367144dab691fdd8bcdab9d58"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-DF-14B-720P_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0043",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-DF-14B-720P_fp8_e5m2.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "3a4d120d8489d7b5f3b3e917a40d382a4205684657023fe35774b63ce81744ed"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-DF-14B-720P_fp8_e5m2.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0044",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-DF-1_3B-540P_fp32.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "a034647ccc71aceda3d9c2c439707b5e829a3c3361dba71a1c083a72db3c4dd9"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-DF-1_3B-540P_fp32.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0045",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-I2V-14B-540P_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "810ea0c4f50c4c2d8a45a9c387392f15da2597415b0de7c88851a72bcf22608b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-I2V-14B-540P_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0046",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-I2V-14B-540P_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "fdcf968c7bcbfc4189a253b894bc1536f84da6099ec81c1cbf2446ea25f18ba6"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-I2V-14B-540P_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0047",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-I2V-14B-540P_fp8_e5m2.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "b733a5f76faf865efc526a2d6988708ad4e705fe63790a06ad17014cda40e3eb"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-I2V-14B-540P_fp8_e5m2.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0048",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-I2V-14B-720P_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "6e20df8767a35cb87ffbfca5c05234e4d87cf89918c0af32bc8796d961a9dea8"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-I2V-14B-720P_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0049",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-I2V-14B-720P_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "d09e69ebd9bf1f2e57ccb3835dd307838f9c05a6e1abd7e11bfbc10d55f1bb6c"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-I2V-14B-720P_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0050",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-I2V-14B-720P_fp8_e5m2.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "a3e99d8af5e31a7011c46410ec90e39f7608762e0deed29b042674504e23bd9a"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-I2V-14B-720P_fp8_e5m2.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0051",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-T2V-14B-540P_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "ebacab07f46871f368b9346e4d4131de54b3a370652e52d3bb7afa8e2c3c011a"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-T2V-14B-540P_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0052",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-T2V-14B-540P_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "3522d602998d633db0afdc444a693262f38cd25415a03eff61e17f2214b78421"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-T2V-14B-540P_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0053",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-T2V-14B-720P_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "783b79cc6bd757956302b540f849ceba0c95fcf58566fd78dc7fcfad0058fda6"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-T2V-14B-720P_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0054",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-T2V-14B-720P_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "150f623193ead0fa33d8da3ce253d1ab925655418dae3d42fa7dc193e3946201"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-T2V-14B-720P_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0055",
+      "name": "Skyreels/Wan2_1-SkyReels-V2-T2V-14B-720P_fp8_e5m2.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "aa4c420161c028f1695528971cd67c580646f668cbc63abdd8e5068b676d221a"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1-SkyReels-V2-T2V-14B-720P_fp8_e5m2.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0056",
+      "name": "Skyreels/Wan2_1_Skyreels-v2-I2V-720P_LoRA_rank_64_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "ca9ab41533934e275a6c611608703628b5a51530c6c94495605228dacc76e7b7"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1_Skyreels-v2-I2V-720P_LoRA_rank_64_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0057",
+      "name": "Skyreels/Wan2_1_Skyreels-v2-I2V-720P_LoRA_rank_adaptive_quantile_0.20_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "21e64b6920ad08d1264d3af6aa3880cca5f340c893c716a088e6a9d12a8ba646"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1_Skyreels-v2-I2V-720P_LoRA_rank_adaptive_quantile_0.20_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0058",
+      "name": "Skyreels/Wan2_1_Skyreels-v2-T2V-720P_LoRA_rank_64_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "f053b33a9f92ed6fda58c50dd02f372f2cbe7de8c837aa9aae3c0ea0b9c7121e"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1_Skyreels-v2-T2V-720P_LoRA_rank_64_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0059",
+      "name": "Skyreels/Wan2_1_SkyreelsA2_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "9f45ccc88aeddfdd7edd0ebcf7429c6d627868884951f1dcd355ef5c1d2ae641"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Skyreels/Wan2_1_SkyreelsA2_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0060",
+      "name": "UniAnimate-Wan2.1-14B-Lora-12000-fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "95776f56efad7737dae5174e9baba85bc546661cb58b0835c2f35f80120dde7b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/UniAnimate-Wan2.1-14B-Lora-12000-fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0061",
+      "name": "Wan21_AccVid_I2V_480P_14B_lora_rank32_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "36ea6f00472fc1ddf7c3a760fbfd6952ae488ecb73c9949804ccb71ea5841874"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan21_AccVid_I2V_480P_14B_lora_rank32_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0062",
+      "name": "Wan21_AccVid_T2V_14B_lora_rank32_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "237cccb1fd43c6949859ec6a2884bca8bc3ca26f618c767cea6b2fa37eb06d60"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan21_AccVid_T2V_14B_lora_rank32_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0063",
+      "name": "Wan21_CausVid_14B_T2V_lora_rank32.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "e5664f709f39b8352e8487e412efdac5c2fc283f21d06e289a19344daaaa198d"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan21_CausVid_14B_T2V_lora_rank32.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0064",
+      "name": "Wan21_CausVid_14B_T2V_lora_rank32_v1_5_no_first_block.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "77a4b34f17856e351c3f0a7256b49518ef9b3a2b50df1c4805a67001af9ab614"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan21_CausVid_14B_T2V_lora_rank32_v1_5_no_first_block.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0065",
+      "name": "Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "3d6853cb7e7e9d6d35fb6c7163a85dab98e6c91d1341e8a3cf0bfb4e66dd68cc"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0066",
+      "name": "Wan21_CausVid_bidirect2_T2V_1_3B_lora_rank32.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "8e5331e780ffb16520bf1ff7ba90188ebd271a4698e5be8e618800e809cca704"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan21_CausVid_bidirect2_T2V_1_3B_lora_rank32.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0067",
+      "name": "Wan21_T2V_14B_MoviiGen_lora_rank32_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "8c5bbd191277c32a726962a165ae69ba9225e29a8490c9cf444cb89b1869affc"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan21_T2V_14B_MoviiGen_lora_rank32_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0068",
+      "name": "Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "914fafa5dded72e6c470d6f764b97fe4d71567dae7cc01d1181b310efd5c37a6"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0069",
+      "name": "Wan21_Uni3C_controlnet_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "d7dd1bfe5f34dea607a749d72f206908e76a908b9999cb28c53c3eb167ddd709"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan21_Uni3C_controlnet_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0070",
+      "name": "Wan22-Lightning/Wan2.2-Lightning_I2V-A14B-4steps-lora_HIGH_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "216cce62ecb5687d55fdc035b1cdbea01d1a9a8100ee924d2155cf1d64f1050b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan22-Lightning/Wan2.2-Lightning_I2V-A14B-4steps-lora_HIGH_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0071",
+      "name": "Wan22-Lightning/Wan2.2-Lightning_I2V-A14B-4steps-lora_LOW_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "a3d474925042ec908c212c6c4c1e338637e27585c3970253f65b9638a9f5874b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan22-Lightning/Wan2.2-Lightning_I2V-A14B-4steps-lora_LOW_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0072",
+      "name": "Wan22-Lightning/Wan2.2-Lightning_T2V-A14B-4steps-lora_HIGH_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "36f46e2be268aa8b70f3d7f7ff2eee44fe6ee0c430c55af8a9db85e0359034e0"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan22-Lightning/Wan2.2-Lightning_T2V-A14B-4steps-lora_HIGH_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0073",
+      "name": "Wan22-Lightning/Wan2.2-Lightning_T2V-A14B-4steps-lora_LOW_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "a199a26f1f9ea865dfcf880e01d1fc2e4054282724a482734c10f4ed284009a0"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan22-Lightning/Wan2.2-Lightning_T2V-A14B-4steps-lora_LOW_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0074",
+      "name": "Wan22-Lightning/Wan2.2-Lightning_T2V-v1.1-A14B-4steps-lora_HIGH_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "b64ddbc09685b44048d20e4eebdb53bce8aa9198595fdd822a87c256953a2723"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan22-Lightning/Wan2.2-Lightning_T2V-v1.1-A14B-4steps-lora_HIGH_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0075",
+      "name": "Wan22-Lightning/Wan2.2-Lightning_T2V-v1.1-A14B-4steps-lora_LOW_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "2d184b3eb5ca7992a76aa39026acc6720e2278eedd5c7d1363ccaf530789ec6e"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan22-Lightning/Wan2.2-Lightning_T2V-v1.1-A14B-4steps-lora_LOW_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0076",
+      "name": "Wan2_1-AccVideo-T2V-14B_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "4e5fb2c827cdcae5b69440674c3fe4cd7d8363571a8bb81319bced9f109d6853"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-AccVideo-T2V-14B_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0077",
+      "name": "Wan2_1-Anisora-I2V-480P-14B_Q8_0.gguf",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-Anisora-I2V-480P-14B_Q8_0.gguf"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0078",
+      "name": "Wan2_1-Anisora-I2V-480P-14B_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "d2ecfbfb2857b276349271d39c20442fe6dff0f760020d09b80df86518564062"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-Anisora-I2V-480P-14B_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0079",
+      "name": "Wan2_1-Anisora-I2V-480P-14B_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "20575049516fa1e6255389aaa397cf5f358d478aa4f927fe3282ed69b3e0a0ff"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-Anisora-I2V-480P-14B_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0080",
+      "name": "Wan2_1-FLF2V-14B-720P_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "25f70fb3f13aa958746fab67c48c639f5229bcd14df3adf064d77a118a1bd05c"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-FLF2V-14B-720P_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0081",
+      "name": "Wan2_1-FLF2V-14B-720P_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "5c88fbec1f57255b42503bf3a1cfa495dc2d4ae891f1ebce2edbe9bbd155c5e2"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-FLF2V-14B-720P_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0082",
+      "name": "Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "996dbad030df09b0b3c8e764f0fb5a81b98b220ab89524d6a9369e9ed882791f"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0083",
+      "name": "Wan2_1-I2V-14B-480P_fp8_e5m2.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "dd899be7f572b54c29fd9db5de490e02ade23381406941da51afc76be99a447f"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-I2V-14B-480P_fp8_e5m2.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0084",
+      "name": "Wan2_1-I2V-14B-720P_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "993d4cf51527a2fdc3b9079efa636cf6ccd8bca063cc695fcc64ed4b4e739305"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-I2V-14B-720P_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0085",
+      "name": "Wan2_1-I2V-14B-720P_fp8_e5m2.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "8957d9f40f021ebb56ee3484c44f1753818ff6d9c4eb8b9f815b2c7ece922899"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-I2V-14B-720P_fp8_e5m2.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0086",
+      "name": "Wan2_1-I2V-ATI-14B_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "99ebf515d54b12e1ef768309c8aeefaf0883862513cee16669da96e2e278c046"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-I2V-ATI-14B_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0087",
+      "name": "Wan2_1-I2V-ATI-14B_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "9f5e44de79dfec7cb78a92d1b85d61cec68b950ac3b458ee7b4d8102bbc45ab0"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-I2V-ATI-14B_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0088",
+      "name": "Wan2_1-I2V-ATI-14B_fp8_e5m2.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "8660dc5c3cfca974ea2801730c8c54ec4cfdcf1ae82f253d3b7e1c61c189f7c8"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-I2V-ATI-14B_fp8_e5m2.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0089",
+      "name": "Wan2_1-MiniMaxRemover_1_3B_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "45e55f9a4f85ce26531cdb669fabc76a15d6d9e0d62a918de146bc401d786c5d"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-MiniMaxRemover_1_3B_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0090",
+      "name": "Wan2_1-MoviiGen1_1_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "e2d2a04c2eb661e32caa1f7deb364bbafbdaf112876484db04d62cbc3436ae23"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-MoviiGen1_1_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0091",
+      "name": "Wan2_1-MoviiGen1_1_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "32445c526de9c75a561799e49c9589de5e2fac486a2f400a647910cce2de4837"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-MoviiGen1_1_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0092",
+      "name": "Wan2_1-T2V-14B_CausVid_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "391160ba8594c42a220294853ffeda79da83a61df1886a6243f4265da989855f"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-T2V-14B_CausVid_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0093",
+      "name": "Wan2_1-T2V-14B_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "3dfae01b9fb11a95bc9ec13eea15399fa88fe05f8f4d95a71fe796693a2741d2"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-T2V-14B_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0094",
+      "name": "Wan2_1-T2V-14B_fp8_e5m2.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "aa6a2cf24a1863052589a10b721cee52f5db32907dea2c9e4ad785f067be4c7b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-T2V-14B_fp8_e5m2.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0095",
+      "name": "Wan2_1-T2V-1_3B_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "bcb3c10ad5bbb03e597ebbf3ec1d1ce3e76180df99d4d11e1cc933ff92c066d5"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-T2V-1_3B_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0096",
+      "name": "Wan2_1-T2V-1_3B_fp32.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "96b6b242ca1c2f24e9d02cd6596066fab6d310e2d7538f33ae267cb18d957e8f"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-T2V-1_3B_fp32.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0097",
+      "name": "Wan2_1-T2V-1_3B_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "a913893ce03cd6e3d48853258f4521f054db6d72b59d67359ea0b138d8071812"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-T2V-1_3B_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0098",
+      "name": "Wan2_1-T2V_FastWan_1_3B_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "48f91d9f87e9123c2d05bf6a707fa11e44819d1d1d66967fa3f2d0b403d01425"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-T2V_FastWan_1_3B_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0099",
+      "name": "Wan2_1-VACE_module_14B_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "66a4bd41ec0fc58f1ff6d1313e06cd9a4c24ab60171a5846937536f8d4de6a65"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-VACE_module_14B_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0100",
+      "name": "Wan2_1-VACE_module_14B_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "4e251417a499fcdce54b6cddbd53d85644bcafb4e3d43a7d10c346612cb75501"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-VACE_module_14B_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0101",
+      "name": "Wan2_1-VACE_module_1_3B_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "cbcab35a0fbececa5d0b64af7f1ac1101c3fc61191c407f0d67301ac56fb0574"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-VACE_module_1_3B_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0102",
+      "name": "Wan2_1-Wan-I2V-MAGREF-14B_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "b397bd455b6d1cc2c638a6d7fffb4ef51aaa0df67aada564e8a5559f6b5ae79f"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1-Wan-I2V-MAGREF-14B_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0103",
+      "name": "Wan2_1_VACE_1_3B_preview_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "a76dd6066e5e157a8b15d97a43baddf17fc316c89b82445b17ea2428316ce40b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1_VACE_1_3B_preview_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0104",
+      "name": "Wan2_1_VAE_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "1ab9a32cc2c740f6e39d80d367ce5dcc28db8c71b79b28670546b8973e9d75f9"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1_VAE_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0105",
+      "name": "Wan2_1_VAE_fp32.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "fd1531e31cdd20af005a9fb66e69afe4ea481a6db9b07cd889ece2e1ca2e67b9"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1_VAE_fp32.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0106",
+      "name": "Wan2_1_kwai_recammaster_1_3B_step20000_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "f0dcfbae828750e611286308e743b011aba93e2643b86cdae9ddfb6bbc9c84ca"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1_kwai_recammaster_1_3B_step20000_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0107",
+      "name": "Wan2_1_self_forcing_dmd_1_3B_lora_rank_32_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "c873cfe2f60d77d6e7fb787ce3ba728e19fbb958f21bf5d5da0ddfe7c37649db"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1_self_forcing_dmd_1_3B_lora_rank_32_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0108",
+      "name": "Wan2_1_self_forcing_sid_v2_1_3B_lora_rank_32_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "f7cd1e0d1c04ecc1bb15aaf50e7f9b228fb5530da1f2922dd02415c9d92023d2"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_1_self_forcing_sid_v2_1_3B_lora_rank_32_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0109",
+      "name": "Wan2_2-I2V-A14B-HIGH_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "89292f8cbeadad6ebcc3538e1c27bc703bb1889931caaec2714405965a3288e9"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_2-I2V-A14B-HIGH_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0110",
+      "name": "Wan2_2-I2V-A14B-LOW_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "431f99ece053058bdae20b2d2b88554b84198787c8d888fc3fd917eb2ee582e6"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_2-I2V-A14B-LOW_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0111",
+      "name": "Wan2_2_VAE_bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "0e913a2ca571c75fcb63385a8edadcca73454af5842596cb1ad11e4142590996"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/Wan2_2_VAE_bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0112",
+      "name": "WanVideo_2_1_Multitalk_14B_fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "8620f05821c7ad28ef4d92349ef1e294c0f562b60a6f94840fceaa4de68b2834"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/WanVideo_2_1_Multitalk_14B_fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0113",
+      "name": "fantasytalking_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "7eb1edf107bd36de13efb35f3b0198111f48d1f57127cb54e2e6cf07bc2c8add"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/fantasytalking_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0114",
+      "name": "open-clip-xlm-roberta-large-vit-huge-14_visual_fp16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "b0d8d80a37826639eeecd9d7cb972a8b387215c3d26e4f0b8e415a1c97b343da"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/open-clip-xlm-roberta-large-vit-huge-14_visual_fp16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0115",
+      "name": "open-clip-xlm-roberta-large-vit-huge-14_visual_fp32.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "92f086b055939277030025242998f0a55a500d20ad67e38e11032b2a6f6d6ef7"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/open-clip-xlm-roberta-large-vit-huge-14_visual_fp32.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0116",
+      "name": "taew2_1.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "a870ebc6a8bc36bb4124c304341e7b258ab4010e365743fbac2dc43af98cf9b2"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/taew2_1.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0117",
+      "name": "umt5-xxl-enc-bf16.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "4fa971faf306cad919033d5bbe192e571dc08452f800cbf2ec3c73977c01b2cc"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/umt5-xxl-enc-bf16.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0118",
+      "name": "umt5-xxl-enc-fp8_e4m3fn.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "3fe5173588270c22505d4f9158bb1644b78331b8614206a97e92760b960c9ffa"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/8be53242eddc48f8cfd31937abd426e1095e1ad9/umt5-xxl-enc-fp8_e4m3fn.safetensors"
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-TRANSFORMERS",
+      "name": "transformers",
+      "packageVersion": null,
+      "downloadLocation": "https://pypi.org/project/transformers/",
+      "packageUrl": "pkg:pypi/transformers"
+    },
+    {
+      "type": "SimpleLicensingText",
+      "spdxId": "SPDXRef-LIC-MODEL-DECLARED",
+      "licenseText": "Custom license (text unavailable)"
+    },
+    {
+      "type": "SimpleLicensingText",
+      "spdxId": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "licenseText": "Custom license (text unavailable)"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DESCRIBES",
+      "from": "SPDXRef-DOCUMENT",
+      "to": "SPDXRef-MODEL",
+      "relationshipType": "describes"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0000",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0000",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0001",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0001",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0002",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0002",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0003",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0003",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0004",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0004",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0005",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0005",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0006",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0006",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0007",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0007",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0008",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0008",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0009",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0009",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0010",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0010",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0011",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0011",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0012",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0012",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0013",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0013",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0014",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0014",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0015",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0015",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0016",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0016",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0017",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0017",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0018",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0018",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0019",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0019",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0020",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0020",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0021",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0021",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0022",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0022",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0023",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0023",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0024",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0024",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0025",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0025",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0026",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0026",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0027",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0027",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0028",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0028",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0029",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0029",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0030",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0030",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0031",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0031",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0032",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0032",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0033",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0033",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0034",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0034",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0035",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0035",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0036",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0036",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0037",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0037",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0038",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0038",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0039",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0039",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0040",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0040",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0041",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0041",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0042",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0042",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0043",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0043",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0044",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0044",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0045",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0045",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0046",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0046",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0047",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0047",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0048",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0048",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0049",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0049",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0050",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0050",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0051",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0051",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0052",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0052",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0053",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0053",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0054",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0054",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0055",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0055",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0056",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0056",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0057",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0057",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0058",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0058",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0059",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0059",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0060",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0060",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0061",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0061",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0062",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0062",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0063",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0063",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0064",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0064",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0065",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0065",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0066",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0066",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0067",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0067",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0068",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0068",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0069",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0069",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0070",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0070",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0071",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0071",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0072",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0072",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0073",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0073",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0074",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0074",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0075",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0075",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0076",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0076",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0077",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0077",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0078",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0078",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0079",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0079",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0080",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0080",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0081",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0081",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0082",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0082",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0083",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0083",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0084",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0084",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0085",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0085",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0086",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0086",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0087",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0087",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0088",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0088",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0089",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0089",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0090",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0090",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0091",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0091",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0092",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0092",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0093",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0093",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0094",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0094",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0095",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0095",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0096",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0096",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0097",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0097",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0098",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0098",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0099",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0099",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0100",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0100",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0101",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0101",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0102",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0102",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0103",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0103",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0104",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0104",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0105",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0105",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0106",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0106",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0107",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0107",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0108",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0108",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0109",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0109",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0110",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0110",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0111",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0111",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0112",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0112",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0113",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0113",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0114",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0114",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0115",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0115",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0116",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0116",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0117",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0117",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0118",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0118",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-TRANSFORMERS",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-TRANSFORMERS",
+      "relationshipType": "dependsOn"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DECLARED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-DECLARED",
+      "relationshipType": "hasDeclaredLicense"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONCLUDED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "relationshipType": "hasConcludedLicense"
+    }
+  ],
+  "rootElement": [
+    "SPDXRef-MODEL"
+  ],
+  "externalRef": []
+}
