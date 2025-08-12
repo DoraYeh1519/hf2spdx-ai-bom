@@ -1,0 +1,396 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "type": "SpdxDocument",
+  "spdxId": "SPDXRef-DOCUMENT",
+  "name": "AI-BOM for meta-llama/Llama-3.1-8B-Instruct",
+  "profileConformance": [
+    "core",
+    "software",
+    "simpleLicensing",
+    "ai",
+    "dataset"
+  ],
+  "dataLicense": {
+    "type": "LicenseExpression",
+    "spdxId": "SPDXRef-DATA-LICENSE",
+    "licenseExpression": "CC0-1.0"
+  },
+  "creationInfo": {
+    "type": "CreationInfo",
+    "created": "2025-08-12T02:33:01Z",
+    "specVersion": "3.0.1",
+    "createdBy": [
+      {
+        "type": "Organization",
+        "spdxId": "SPDXRef-ORG",
+        "name": "Hugging Face Hub Scraper (example)"
+      }
+    ],
+    "createdUsing": [
+      {
+        "type": "Tool",
+        "spdxId": "SPDXRef-TOOL",
+        "name": "hf2spdx-ai-bom",
+        "version": "1.2.0"
+      }
+    ]
+  },
+  "element": [
+    {
+      "type": "AIPackage",
+      "spdxId": "SPDXRef-MODEL",
+      "name": "meta-llama/Llama-3.1-8B-Instruct",
+      "description": "text-generation model from meta-llama/Llama-3.1-8B-Instruct",
+      "packageVersion": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "standardCompliance": [],
+      "typeOfModel": "Transformer",
+      "domain": [
+        "NLP"
+      ],
+      "hyperparameter": {},
+      "modelExplainability": null,
+      "informationAboutTraining": "See model card",
+      "modelDataPreprocessing": "Not specified",
+      "metric": [],
+      "safetyRiskAssessment": [],
+      "useSensitivePersonalInformation": false,
+      "energyConsumption": []
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0000",
+      "name": ".gitattributes",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/.gitattributes"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0001",
+      "name": "LICENSE",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/LICENSE"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0002",
+      "name": "README.md",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/README.md"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0003",
+      "name": "USE_POLICY.md",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/USE_POLICY.md"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0004",
+      "name": "config.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/config.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0005",
+      "name": "generation_config.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/generation_config.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0006",
+      "name": "model-00001-of-00004.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model-00001-of-00004.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0007",
+      "name": "model-00002-of-00004.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model-00002-of-00004.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0008",
+      "name": "model-00003-of-00004.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model-00003-of-00004.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0009",
+      "name": "model-00004-of-00004.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model-00004-of-00004.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0010",
+      "name": "model.safetensors.index.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model.safetensors.index.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0011",
+      "name": "original/consolidated.00.pth",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/original/consolidated.00.pth"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0012",
+      "name": "original/params.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/original/params.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0013",
+      "name": "original/tokenizer.model",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/original/tokenizer.model"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0014",
+      "name": "special_tokens_map.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/special_tokens_map.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0015",
+      "name": "tokenizer.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/tokenizer.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0016",
+      "name": "tokenizer_config.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/tokenizer_config.json"
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-TRANSFORMERS",
+      "name": "transformers",
+      "packageVersion": null,
+      "downloadLocation": "https://pypi.org/project/transformers/",
+      "packageUrl": "pkg:pypi/transformers",
+      "sourceInfo": "Requires transformers >= 4.43.0 per model card"
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-TORCH",
+      "name": "torch",
+      "packageVersion": null,
+      "downloadLocation": "https://pypi.org/project/torch/",
+      "packageUrl": "pkg:pypi/torch"
+    },
+    {
+      "type": "SimpleLicensingText",
+      "spdxId": "SPDXRef-LIC-MODEL-DECLARED",
+      "licenseText": "llama/Llama-3.1-8B-Instruct · Hugging Face\nHugging Face\nModels\nDatasets\nSpaces\nCommunity\nDocs\nEnterprise\nPricing\nLog In\nSign Up\nmeta-llama\n/\nLlama-3.1-8B-Instruct\nlike\n4.45k\nFollow\nMeta Llama\n56.6k\nText Generation\nTransformers\nSafetensors\nPyTorch\n8 languages\nllama\nfacebook\nmeta\nllama-3\nconversational\ntext-generation-inference\narxiv:\n2204.05149\nLicense:\nllama3.1\nModel card\nFiles\nFiles and versions\nxet\nCommunity\n264\nTrain\nDeploy\nUse this model\nYou need to agree to share your contact information to access this model\nThe information you provide will be collected, stored, processed and shared in accordance with the\nMeta Privacy Policy\n.\nLLAMA 3.1 COMMUNITY LICENSE AGREEMENT\nLlama 3.1 Version Release Date: July 23, 2024\n\"Agreement\" means the terms and conditions for use, reproduction, distribution and modification of the  Llama Materials set forth herein.\n\"Documentation\" means the specifications, manuals and documentation accompanying Llama 3.1 distributed by Meta at\nhttps://llama.meta.com/doc/overview\n.\n\"Licensee\" or \"you\" means you, or your employer or any other person or entity (if you are entering into this Agreement on such person or entity’s behalf), of the age required under applicable laws, rules or regulations to provide legal consent and that has legal authority to bind your employer or such other person or entity if you are entering in this Agreement on their behalf.\n\"Llama 3.1\" means the foundational large language models and software and algorithms, including machine-learning model code, trained model weights, inference-enabling code, training-enabling code, fine-tuning enabling code and other elements of the foregoing distributed by Meta at\nhttps://llama.meta.com/llama-downloads\n.\n\"Llama Materials\" means, collectively, Meta’s proprietary Llama 3.1 and Documentation (and any portion thereof) made available under this Agreement.\n\"Meta\" or \"we\" means Meta Platforms Ireland Limited (if you are located in or, if you are an entity, your principal place of business is in the EEA or Switzerland) and Meta Platforms, Inc. (if you are located outside of the EEA or Switzerland).\nLicense Rights and Redistribution.\na. Grant of Rights. You are granted a non-exclusive, worldwide, non-transferable and royalty-free limited license under Meta’s intellectual property or other rights owned by Meta embodied in the Llama Materials to use, reproduce, distribute, copy, create derivative works of, and make modifications to the Llama Materials.\nb. Redistribution and Use.\ni. If you distribute or make available the Llama Materials (or any derivative works thereof), or a product or service (including another AI model) that contains any of them, you shall (A) provide a copy of this Agreement with any such Llama Materials; and (B) prominently display “Built with Llama” on a related website, user interface, blogpost, about page, or product documentation. If you use the Llama Materials or any outputs or results of the Llama Materials to create, train, fine tune, or otherwise improve an AI model, which is distributed or made available, you shall also include “Llama” at the beginning of any such AI model name.\nii. If you receive Llama Materials, or any derivative works thereof, from a Licensee as part  of an integrated end user product, then Section 2 of this Agreement will not apply to you.\niii. You must retain in all copies of the Llama Materials that you distribute the following attribution notice within a “Notice” text file distributed as a part of such copies: “Llama 3.1 is licensed under the Llama 3.1 Community License, Copyright © Meta Platforms, Inc. All Rights Reserved.”\niv. Your use of the Llama Materials must comply with applicable laws and regulations (including trade compliance laws and regulations) and adhere to the Acceptable Use Policy for the Llama Materials (available at\nhttps://llama.meta.com/llama3_1/use-policy\n), which is hereby incorporated by reference into this Agreement.\nAdditional Commercial Terms. If, on the Llama 3.1 version release date, the monthly active users of the products or services made available by or for Licensee, or Licensee’s affiliates, is greater than 700 million monthly active users in the preceding calendar month, you must request a license from Meta, which Meta may grant to you in its sole discretion, and you are not authorized to exercise any of the rights under this Agreement unless or until Meta otherwise expressly grants you such rights.\nDisclaimer of Warranty. UNLESS REQUIRED BY APPLICABLE LAW, THE LLAMA MATERIALS AND ANY OUTPUT AND RESULTS THEREFROM ARE PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, AND META DISCLAIMS ALL WARRANTIES OF ANY KIND, BOTH EXPRESS AND IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE. YOU ARE SOLELY RESPONSIBLE FOR DETERMINING THE APPROPRIATENESS OF USING OR REDISTRIBUTING THE LLAMA MATERIALS AND ASSUME ANY RISKS ASSOCIATED WITH YOUR USE OF THE LLAMA MATERIALS AND ANY OUTPUT AND RESULTS.\nLimitation of Liability. IN NO EVENT WILL META OR ITS AFFILIATES BE LIABLE UNDER ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, TORT, NEGLIGENCE, PRODUCTS LIABILITY, OR OTHERWISE, ARISING OUT OF THIS AGREEMENT, FOR ANY LOST PROFITS OR ANY INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL, EXEMPLARY OR PUNITIVE DAMAGES, EVEN IF META OR ITS AFFILIATES HAVE BEEN ADVISED OF THE POSSIBILITY OF ANY OF THE FOREGOING.\nIntellectual Property.\na. No trademark licenses are granted under this Agreement, and in connection with the Llama Materials, neither Meta nor Licensee may use any name or mark owned by or associated with the other or any of its affiliates, except as required for reasonable and customary use in describing and redistributing the Llama Materials or as set forth in this Section 5(a). Meta hereby grants you a license to use “Llama” (the “Mark”) solely as required to comply with the last sentence of Section 1.b.i. You will comply with Meta’s brand guidelines (currently accessible at\nhttps://about.meta.com/brand/resources/meta/company-brand/\n). All goodwill arising out of your use of the Mark will inure to the benefit of Meta.\nb. Subject to Meta’s ownership of Llama Materials and derivatives made by or for Meta, with respect to any derivative works and modifications of the Llama Materials that are made by you, as between you and Meta, you are and will be the owner of such derivative works and modifications.\nc. If you institute litigation or other proceedings against Meta or any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Llama Materials or Llama 3.1 outputs or results, or any portion of any of the foregoing, constitutes infringement of intellectual property or other rights owned or licensable by you, then any licenses granted to you under this Agreement shall terminate as of the date such litigation or claim is filed or instituted. You will indemnify and hold harmless Meta from and against any claim by any third party arising out of or related to your use or distribution of the Llama Materials.\nTerm and Termination. The term of this Agreement will commence upon your acceptance of this Agreement or access to the Llama Materials and will continue in full force and effect until terminated in accordance with the terms and conditions herein. Meta may terminate this Agreement if you are in breach of any term or condition of this Agreement. Upon termination of this Agreement, you shall delete and cease use of the Llama Materials. Sections 3, 4 and 7 shall survive the termination of this Agreement.\nGoverning Law and Jurisdiction. This Agreement will be governed and construed under the laws of the State of California without regard to choice of law principles, and the UN Convention on Contracts for the International Sale of Goods does not apply to this Agreement. The courts of California shall have exclusive jurisdiction of any dispute arising out of this Agreement.\nLlama 3.1 Acceptable Use Policy\nMeta is committed to promoting safe and fair use of its tools and features, including Llama 3.1. If you access or use Llama 3.1, you agree to this Acceptable Use Policy (“Policy”). The most recent copy of this policy can be found at\nhttps://llama.meta.com/llama3_1/use-policy\nProhibited Uses\nWe want everyone to use Llama 3.1 safely and responsibly. You agree you will not use, or allow others to use, Llama 3.1 to:\nViolate the law or others’ rights, including to:\nEngage in, promote, generate, contribute to, encourage, plan, incite, or further illegal or unlawful activity or content, such as:\nViolence or terrorism\nExploitation or harm to children, including the solicitation, creation, acquisition, or dissemination of child exploitative content or failure to report Child Sexual Abuse Material\nHuman trafficking, exploitation, and sexual violence\nThe illegal distribution of information or materials to minors, including obscene materials, or failure to employ legally required age-gating in connection with such information or materials.\nSexual solicitation\nAny other criminal activity\nEngage in, promote, incite, or facilitate the harassment, abuse, threatening, or bullying of individuals or groups of individuals\nEngage in, promote, incite, or facilitate discrimination or other unlawful or harmful conduct in the provision of employment, employment benefits, credit, housing, other economic benefits, or other essential goods and services\nEngage in the unauthorized or unlicensed practice of any profession including, but not limited to, financial, legal, medical/health, or related professional practices\nCollect, process, disclose, generate, or infer health, demographic, or other sensitive personal or private information about individuals without rights and consents required by applicable laws\nEngage in or facilitate any action or generate any content that infringes, misappropriates, or otherwise violates any third-party rights, including the outputs or results of any products or services using the Llama Materials\nCreate, generate, or facilitate the creation of malicious code, malware, computer viruses or do anything else that could disable, overburden, interfere with or impair the proper working, integrity, operation or appearance of a website or computer system\nEngage in, promote, incite, facilitate, or assist in the planning or development of activities that present a risk of death or bodily harm to individuals, including use of Llama 3.1 related to the following:\nMilitary, warfare, nuclear industries or applications, espionage, use for materials or activities that are subject to the International Traffic Arms Regulations (ITAR) maintained by the United States Department of State\nGuns and illegal weapons (including weapon development)\nIllegal drugs and regulated/controlled substances\nOperation of critical infrastructure, transportation technologies, or heavy machinery\nSelf-harm or harm to others, including suicide, cutting, and eating disorders\nAny content intended to incite or promote violence, abuse, or any infliction of bodily harm to an individual\nIntentionally deceive or mislead others, including use of Llama 3.1 related to the following:\nGenerating, promoting, or furthering fraud or the creation or promotion of disinformation\nGenerating, promoting, or furthering defamatory content, including the creation of defamatory statements, images, or other content\nGenerating, promoting, or further distributing spam\nImpersonating another individual without consent, authorization, or legal right\nRepresenting that the use of Llama 3.1 or outputs are human-generated\nGenerating or facilitating false online engagement, including fake reviews and other means of fake online engagement\nFail to appropriately disclose to end users any known dangers of your AI system\nPlease report any violation of this Policy, software “bug,” or other problems that could lead to a violation of this Policy through one of the following means:\nReporting issues with the model:\nhttps://github.com/meta-llama/llama-models/issues\nReporting risky content generated by the model:\ndevelopers.facebook.com/llama_output_feedback\nReporting bugs and security concerns: facebook.com/whitehat/info\nReporting violations of the Acceptable Use Policy or unlicensed uses of Meta Llama 3:\nLlamaUseReport@meta.com\nLog in\nor\nSign Up\nto review the conditions and access this model content.\nModel Information\nIntended Use\nHow to use\nUse with transformers\nTool use with transformers\nUse with\nllama\nHardware and Software\nTraining Data\nBenchmark scores\nBase pretrained models\nInstruction tuned models\nMultilingual benchmarks\nResponsibility & Safety\nResponsible deployment\nLlama 3.1 instruct\nLlama 3.1 systems\nNew capabilities\nEvaluations\nCritical and other risks\nCommunity\nEthical Considerations and Limitations\nModel Information\nThe Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out). The Llama 3.1 instruction tuned text only models (8B, 70B, 405B) are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models on common industry benchmarks.\nModel developer\n: Meta\nModel Architecture:\nLlama 3.1 is an auto-regressive language model that uses an optimized transformer architecture. The tuned versions use supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align with human preferences for helpfulness and safety.\nTraining Data\nParams\nInput modalities\nOutput modalities\nContext length\nGQA\nToken count\nKnowledge cutoff\nLlama 3.1 (text only)\nA new mix of publicly available online data.\n8B\nMultilingual Text\nMultilingual Text and code\n128k\nYes\n15T+\nDecember 2023\n70B\nMultilingual Text\nMultilingual Text and code\n128k\nYes\n405B\nMultilingual Text\nMultilingual Text and code\n128k\nYes\nSupported languages:\nEnglish, German, French, Italian, Portuguese, Hindi, Spanish, and Thai.\nLlama 3.1 family of models\n. Token counts refer to pretraining data only. All model versions use Grouped-Query Attention (GQA) for improved inference scalability.\nModel Release Date:\nJuly 23, 2024.\nStatus:\nThis is a static model trained on an offline dataset. Future versions of the tuned models will be released as we improve model safety with community feedback.\nLicense:\nA custom commercial license, the Llama 3.1 Community License, is available at:\nhttps://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE\nWhere to send questions or comments about the model Instructions on how to provide feedback or comments on the model can be found in the model\nREADME\n. For more technical information about generation parameters and recipes for how to use Llama 3.1 in applications, please go\nhere\n.\nIntended Use\nIntended Use Cases\nLlama 3.1 is intended for commercial and research use in multiple languages. Instruction tuned text only models are intended for assistant-like chat, whereas pretrained models can be adapted for a variety of natural language generation tasks. The Llama 3.1 model collection also supports the ability to leverage the outputs of its models to improve other models including synthetic data generation and distillation. The Llama 3.1 Community License allows for these use cases.\nOut-of-scope\nUse in any manner that violates applicable laws or regulations (including trade compliance laws). Use in any other way that is prohibited by the Acceptable Use Policy and Llama 3.1 Community License. Use in languages beyond those explicitly referenced as supported in this model card**.\n**\nNote\n: Llama 3.1 has been trained on a broader collection of languages than the 8 supported languages. Developers may fine-tune Llama 3.1 models for languages beyond the 8 supported languages provided they comply with the Llama 3.1 Community License and the Acceptable Use Policy and in such cases are responsible for ensuring that any uses of Llama 3.1 in additional languages is done in a safe and responsible manner.\nHow to use\nThis repository contains two versions of Meta-Llama-3.1-8B-Instruct, for use with transformers and with the original\nllama\ncodebase.\nUse with transformers\nStarting with\ntransformers >= 4.43.0\nonward, you can run conversational inference using the Transformers\npipeline\nabstraction or by leveraging the Auto classes with the\ngenerate()\nfunction.\nMake sure to update your transformers installation via\npip install --upgrade transformers\n.\nimport\ntransformers\nimport\ntorch\n\nmodel_id =\n\"meta-llama/Meta-Llama-3.1-8B-Instruct\"\npipeline = transformers.pipeline(\n\"text-generation\"\n,\n    model=model_id,\n    model_kwargs={\n\"torch_dtype\"\n: torch.bfloat16},\n    device_map=\n\"auto\"\n,\n)\n\nmessages = [\n    {\n\"role\"\n:\n\"system\"\n,\n\"content\"\n:\n\"You are a pirate chatbot who always responds in pirate speak!\"\n},\n    {\n\"role\"\n:\n\"user\"\n,\n\"content\"\n:\n\"Who are you?\"\n},\n]\n\noutputs = pipeline(\n    messages,\n    max_new_tokens=\n256\n,\n)\nprint\n(outputs[\n0\n][\n\"generated_text\"\n][-\n1\n])\nNote: You can also find detailed recipes on how to use the model locally, with\ntorch.compile()\n, assisted generations, quantised and more at\nhuggingface-llama-recipes\nTool use with transformers\nLLaMA-3.1 supports multiple tool use formats. You can see a full guide to prompt formatting\nhere\n.\nTool use is also supported through\nchat templates\nin Transformers. \nHere is a quick example showing a single simple tool:\n# First, define a tool\ndef\nget_current_temperature\n(\nlocation:\nstr\n) ->\nfloat\n:\n\"\"\"\nGet the current temperature at a location.\nArgs:\nlocation: The location to get the temperature for, in the format \"City, Country\"\nReturns:\nThe current temperature at the specified location in the specified units, as a float.\n\"\"\"\nreturn\n22.\n# A real function should probably actually get the temperature!\n# Next, create a chat and apply the chat template\nmessages = [\n  {\n\"role\"\n:\n\"system\"\n,\n\"content\"\n:\n\"You are a bot that responds to weather queries.\"\n},\n  {\n\"role\"\n:\n\"user\"\n,\n\"content\"\n:\n\"Hey, what's the temperature in Paris right now?\"\n}\n]\n\ninputs = tokenizer.apply_chat_template(messages, tools=[get_current_temperature], add_generation_prompt=\nTrue\n)\nYou can then generate text from this input as normal. If the model generates a tool call, you should add it to the chat like so:\ntool_call = {\n\"name\"\n:\n\"get_current_temperature\"\n,\n\"arguments\"\n: {\n\"location\"\n:\n\"Paris, France\"\n}}\nmessages.append({\n\"role\"\n:\n\"assistant\"\n,\n\"tool_calls\"\n: [{\n\"type\"\n:\n\"function\"\n,\n\"function\"\n: tool_call}]})\nand then call the tool and append the result, with the\ntool\nrole, like so:\nmessages.append({\n\"role\"\n:\n\"tool\"\n,\n\"name\"\n:\n\"get_current_temperature\"\n,\n\"content\"\n:\n\"22.0\"\n})\nAfter that, you can\ngenerate()\nagain to let the model use the tool result in the chat. Note that this was a very brief introduction to tool calling - for more information,\nsee the\nLLaMA prompt format docs\nand the Transformers\ntool use documentation\n.\nUse with\nllama\nPlease, follow the instructions in the\nrepository\nTo download Original checkpoints, see the example command below leveraging\nhuggingface-cli\n:\nhuggingface-cli download meta-llama/Meta-Llama-3.1-8B-Instruct --include \"original/*\" --local-dir Meta-Llama-3.1-8B-Instruct\nHardware and Software\nTraining Factors\nWe used custom training libraries, Meta's custom built GPU cluster, and production infrastructure for pretraining. Fine-tuning, annotation, and evaluation were also performed on production infrastructure.\nTraining utilized a cumulative of\n39.3M GPU hours of computation on H100-80GB (TDP of 700W) type hardware, per the table below. Training time is the total GPU time required for training each model and power consumption is the peak power capacity per GPU device used, adjusted for power usage efficiency.\nTraining Greenhouse Gas Emissions\nEstimated total location-based greenhouse gas emissions were\n11,390\ntons CO2eq for training. Since 2020, Meta has maintained net zero greenhouse gas emissions in its global operations and matched 100% o"
+    },
+    {
+      "type": "SimpleLicensingText",
+      "spdxId": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "licenseText": "llama/Llama-3.1-8B-Instruct · Hugging Face\nHugging Face\nModels\nDatasets\nSpaces\nCommunity\nDocs\nEnterprise\nPricing\nLog In\nSign Up\nmeta-llama\n/\nLlama-3.1-8B-Instruct\nlike\n4.45k\nFollow\nMeta Llama\n56.6k\nText Generation\nTransformers\nSafetensors\nPyTorch\n8 languages\nllama\nfacebook\nmeta\nllama-3\nconversational\ntext-generation-inference\narxiv:\n2204.05149\nLicense:\nllama3.1\nModel card\nFiles\nFiles and versions\nxet\nCommunity\n264\nTrain\nDeploy\nUse this model\nYou need to agree to share your contact information to access this model\nThe information you provide will be collected, stored, processed and shared in accordance with the\nMeta Privacy Policy\n.\nLLAMA 3.1 COMMUNITY LICENSE AGREEMENT\nLlama 3.1 Version Release Date: July 23, 2024\n\"Agreement\" means the terms and conditions for use, reproduction, distribution and modification of the  Llama Materials set forth herein.\n\"Documentation\" means the specifications, manuals and documentation accompanying Llama 3.1 distributed by Meta at\nhttps://llama.meta.com/doc/overview\n.\n\"Licensee\" or \"you\" means you, or your employer or any other person or entity (if you are entering into this Agreement on such person or entity’s behalf), of the age required under applicable laws, rules or regulations to provide legal consent and that has legal authority to bind your employer or such other person or entity if you are entering in this Agreement on their behalf.\n\"Llama 3.1\" means the foundational large language models and software and algorithms, including machine-learning model code, trained model weights, inference-enabling code, training-enabling code, fine-tuning enabling code and other elements of the foregoing distributed by Meta at\nhttps://llama.meta.com/llama-downloads\n.\n\"Llama Materials\" means, collectively, Meta’s proprietary Llama 3.1 and Documentation (and any portion thereof) made available under this Agreement.\n\"Meta\" or \"we\" means Meta Platforms Ireland Limited (if you are located in or, if you are an entity, your principal place of business is in the EEA or Switzerland) and Meta Platforms, Inc. (if you are located outside of the EEA or Switzerland).\nLicense Rights and Redistribution.\na. Grant of Rights. You are granted a non-exclusive, worldwide, non-transferable and royalty-free limited license under Meta’s intellectual property or other rights owned by Meta embodied in the Llama Materials to use, reproduce, distribute, copy, create derivative works of, and make modifications to the Llama Materials.\nb. Redistribution and Use.\ni. If you distribute or make available the Llama Materials (or any derivative works thereof), or a product or service (including another AI model) that contains any of them, you shall (A) provide a copy of this Agreement with any such Llama Materials; and (B) prominently display “Built with Llama” on a related website, user interface, blogpost, about page, or product documentation. If you use the Llama Materials or any outputs or results of the Llama Materials to create, train, fine tune, or otherwise improve an AI model, which is distributed or made available, you shall also include “Llama” at the beginning of any such AI model name.\nii. If you receive Llama Materials, or any derivative works thereof, from a Licensee as part  of an integrated end user product, then Section 2 of this Agreement will not apply to you.\niii. You must retain in all copies of the Llama Materials that you distribute the following attribution notice within a “Notice” text file distributed as a part of such copies: “Llama 3.1 is licensed under the Llama 3.1 Community License, Copyright © Meta Platforms, Inc. All Rights Reserved.”\niv. Your use of the Llama Materials must comply with applicable laws and regulations (including trade compliance laws and regulations) and adhere to the Acceptable Use Policy for the Llama Materials (available at\nhttps://llama.meta.com/llama3_1/use-policy\n), which is hereby incorporated by reference into this Agreement.\nAdditional Commercial Terms. If, on the Llama 3.1 version release date, the monthly active users of the products or services made available by or for Licensee, or Licensee’s affiliates, is greater than 700 million monthly active users in the preceding calendar month, you must request a license from Meta, which Meta may grant to you in its sole discretion, and you are not authorized to exercise any of the rights under this Agreement unless or until Meta otherwise expressly grants you such rights.\nDisclaimer of Warranty. UNLESS REQUIRED BY APPLICABLE LAW, THE LLAMA MATERIALS AND ANY OUTPUT AND RESULTS THEREFROM ARE PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, AND META DISCLAIMS ALL WARRANTIES OF ANY KIND, BOTH EXPRESS AND IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE. YOU ARE SOLELY RESPONSIBLE FOR DETERMINING THE APPROPRIATENESS OF USING OR REDISTRIBUTING THE LLAMA MATERIALS AND ASSUME ANY RISKS ASSOCIATED WITH YOUR USE OF THE LLAMA MATERIALS AND ANY OUTPUT AND RESULTS.\nLimitation of Liability. IN NO EVENT WILL META OR ITS AFFILIATES BE LIABLE UNDER ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, TORT, NEGLIGENCE, PRODUCTS LIABILITY, OR OTHERWISE, ARISING OUT OF THIS AGREEMENT, FOR ANY LOST PROFITS OR ANY INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL, EXEMPLARY OR PUNITIVE DAMAGES, EVEN IF META OR ITS AFFILIATES HAVE BEEN ADVISED OF THE POSSIBILITY OF ANY OF THE FOREGOING.\nIntellectual Property.\na. No trademark licenses are granted under this Agreement, and in connection with the Llama Materials, neither Meta nor Licensee may use any name or mark owned by or associated with the other or any of its affiliates, except as required for reasonable and customary use in describing and redistributing the Llama Materials or as set forth in this Section 5(a). Meta hereby grants you a license to use “Llama” (the “Mark”) solely as required to comply with the last sentence of Section 1.b.i. You will comply with Meta’s brand guidelines (currently accessible at\nhttps://about.meta.com/brand/resources/meta/company-brand/\n). All goodwill arising out of your use of the Mark will inure to the benefit of Meta.\nb. Subject to Meta’s ownership of Llama Materials and derivatives made by or for Meta, with respect to any derivative works and modifications of the Llama Materials that are made by you, as between you and Meta, you are and will be the owner of such derivative works and modifications.\nc. If you institute litigation or other proceedings against Meta or any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Llama Materials or Llama 3.1 outputs or results, or any portion of any of the foregoing, constitutes infringement of intellectual property or other rights owned or licensable by you, then any licenses granted to you under this Agreement shall terminate as of the date such litigation or claim is filed or instituted. You will indemnify and hold harmless Meta from and against any claim by any third party arising out of or related to your use or distribution of the Llama Materials.\nTerm and Termination. The term of this Agreement will commence upon your acceptance of this Agreement or access to the Llama Materials and will continue in full force and effect until terminated in accordance with the terms and conditions herein. Meta may terminate this Agreement if you are in breach of any term or condition of this Agreement. Upon termination of this Agreement, you shall delete and cease use of the Llama Materials. Sections 3, 4 and 7 shall survive the termination of this Agreement.\nGoverning Law and Jurisdiction. This Agreement will be governed and construed under the laws of the State of California without regard to choice of law principles, and the UN Convention on Contracts for the International Sale of Goods does not apply to this Agreement. The courts of California shall have exclusive jurisdiction of any dispute arising out of this Agreement.\nLlama 3.1 Acceptable Use Policy\nMeta is committed to promoting safe and fair use of its tools and features, including Llama 3.1. If you access or use Llama 3.1, you agree to this Acceptable Use Policy (“Policy”). The most recent copy of this policy can be found at\nhttps://llama.meta.com/llama3_1/use-policy\nProhibited Uses\nWe want everyone to use Llama 3.1 safely and responsibly. You agree you will not use, or allow others to use, Llama 3.1 to:\nViolate the law or others’ rights, including to:\nEngage in, promote, generate, contribute to, encourage, plan, incite, or further illegal or unlawful activity or content, such as:\nViolence or terrorism\nExploitation or harm to children, including the solicitation, creation, acquisition, or dissemination of child exploitative content or failure to report Child Sexual Abuse Material\nHuman trafficking, exploitation, and sexual violence\nThe illegal distribution of information or materials to minors, including obscene materials, or failure to employ legally required age-gating in connection with such information or materials.\nSexual solicitation\nAny other criminal activity\nEngage in, promote, incite, or facilitate the harassment, abuse, threatening, or bullying of individuals or groups of individuals\nEngage in, promote, incite, or facilitate discrimination or other unlawful or harmful conduct in the provision of employment, employment benefits, credit, housing, other economic benefits, or other essential goods and services\nEngage in the unauthorized or unlicensed practice of any profession including, but not limited to, financial, legal, medical/health, or related professional practices\nCollect, process, disclose, generate, or infer health, demographic, or other sensitive personal or private information about individuals without rights and consents required by applicable laws\nEngage in or facilitate any action or generate any content that infringes, misappropriates, or otherwise violates any third-party rights, including the outputs or results of any products or services using the Llama Materials\nCreate, generate, or facilitate the creation of malicious code, malware, computer viruses or do anything else that could disable, overburden, interfere with or impair the proper working, integrity, operation or appearance of a website or computer system\nEngage in, promote, incite, facilitate, or assist in the planning or development of activities that present a risk of death or bodily harm to individuals, including use of Llama 3.1 related to the following:\nMilitary, warfare, nuclear industries or applications, espionage, use for materials or activities that are subject to the International Traffic Arms Regulations (ITAR) maintained by the United States Department of State\nGuns and illegal weapons (including weapon development)\nIllegal drugs and regulated/controlled substances\nOperation of critical infrastructure, transportation technologies, or heavy machinery\nSelf-harm or harm to others, including suicide, cutting, and eating disorders\nAny content intended to incite or promote violence, abuse, or any infliction of bodily harm to an individual\nIntentionally deceive or mislead others, including use of Llama 3.1 related to the following:\nGenerating, promoting, or furthering fraud or the creation or promotion of disinformation\nGenerating, promoting, or furthering defamatory content, including the creation of defamatory statements, images, or other content\nGenerating, promoting, or further distributing spam\nImpersonating another individual without consent, authorization, or legal right\nRepresenting that the use of Llama 3.1 or outputs are human-generated\nGenerating or facilitating false online engagement, including fake reviews and other means of fake online engagement\nFail to appropriately disclose to end users any known dangers of your AI system\nPlease report any violation of this Policy, software “bug,” or other problems that could lead to a violation of this Policy through one of the following means:\nReporting issues with the model:\nhttps://github.com/meta-llama/llama-models/issues\nReporting risky content generated by the model:\ndevelopers.facebook.com/llama_output_feedback\nReporting bugs and security concerns: facebook.com/whitehat/info\nReporting violations of the Acceptable Use Policy or unlicensed uses of Meta Llama 3:\nLlamaUseReport@meta.com\nLog in\nor\nSign Up\nto review the conditions and access this model content.\nModel Information\nIntended Use\nHow to use\nUse with transformers\nTool use with transformers\nUse with\nllama\nHardware and Software\nTraining Data\nBenchmark scores\nBase pretrained models\nInstruction tuned models\nMultilingual benchmarks\nResponsibility & Safety\nResponsible deployment\nLlama 3.1 instruct\nLlama 3.1 systems\nNew capabilities\nEvaluations\nCritical and other risks\nCommunity\nEthical Considerations and Limitations\nModel Information\nThe Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out). The Llama 3.1 instruction tuned text only models (8B, 70B, 405B) are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models on common industry benchmarks.\nModel developer\n: Meta\nModel Architecture:\nLlama 3.1 is an auto-regressive language model that uses an optimized transformer architecture. The tuned versions use supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align with human preferences for helpfulness and safety.\nTraining Data\nParams\nInput modalities\nOutput modalities\nContext length\nGQA\nToken count\nKnowledge cutoff\nLlama 3.1 (text only)\nA new mix of publicly available online data.\n8B\nMultilingual Text\nMultilingual Text and code\n128k\nYes\n15T+\nDecember 2023\n70B\nMultilingual Text\nMultilingual Text and code\n128k\nYes\n405B\nMultilingual Text\nMultilingual Text and code\n128k\nYes\nSupported languages:\nEnglish, German, French, Italian, Portuguese, Hindi, Spanish, and Thai.\nLlama 3.1 family of models\n. Token counts refer to pretraining data only. All model versions use Grouped-Query Attention (GQA) for improved inference scalability.\nModel Release Date:\nJuly 23, 2024.\nStatus:\nThis is a static model trained on an offline dataset. Future versions of the tuned models will be released as we improve model safety with community feedback.\nLicense:\nA custom commercial license, the Llama 3.1 Community License, is available at:\nhttps://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE\nWhere to send questions or comments about the model Instructions on how to provide feedback or comments on the model can be found in the model\nREADME\n. For more technical information about generation parameters and recipes for how to use Llama 3.1 in applications, please go\nhere\n.\nIntended Use\nIntended Use Cases\nLlama 3.1 is intended for commercial and research use in multiple languages. Instruction tuned text only models are intended for assistant-like chat, whereas pretrained models can be adapted for a variety of natural language generation tasks. The Llama 3.1 model collection also supports the ability to leverage the outputs of its models to improve other models including synthetic data generation and distillation. The Llama 3.1 Community License allows for these use cases.\nOut-of-scope\nUse in any manner that violates applicable laws or regulations (including trade compliance laws). Use in any other way that is prohibited by the Acceptable Use Policy and Llama 3.1 Community License. Use in languages beyond those explicitly referenced as supported in this model card**.\n**\nNote\n: Llama 3.1 has been trained on a broader collection of languages than the 8 supported languages. Developers may fine-tune Llama 3.1 models for languages beyond the 8 supported languages provided they comply with the Llama 3.1 Community License and the Acceptable Use Policy and in such cases are responsible for ensuring that any uses of Llama 3.1 in additional languages is done in a safe and responsible manner.\nHow to use\nThis repository contains two versions of Meta-Llama-3.1-8B-Instruct, for use with transformers and with the original\nllama\ncodebase.\nUse with transformers\nStarting with\ntransformers >= 4.43.0\nonward, you can run conversational inference using the Transformers\npipeline\nabstraction or by leveraging the Auto classes with the\ngenerate()\nfunction.\nMake sure to update your transformers installation via\npip install --upgrade transformers\n.\nimport\ntransformers\nimport\ntorch\n\nmodel_id =\n\"meta-llama/Meta-Llama-3.1-8B-Instruct\"\npipeline = transformers.pipeline(\n\"text-generation\"\n,\n    model=model_id,\n    model_kwargs={\n\"torch_dtype\"\n: torch.bfloat16},\n    device_map=\n\"auto\"\n,\n)\n\nmessages = [\n    {\n\"role\"\n:\n\"system\"\n,\n\"content\"\n:\n\"You are a pirate chatbot who always responds in pirate speak!\"\n},\n    {\n\"role\"\n:\n\"user\"\n,\n\"content\"\n:\n\"Who are you?\"\n},\n]\n\noutputs = pipeline(\n    messages,\n    max_new_tokens=\n256\n,\n)\nprint\n(outputs[\n0\n][\n\"generated_text\"\n][-\n1\n])\nNote: You can also find detailed recipes on how to use the model locally, with\ntorch.compile()\n, assisted generations, quantised and more at\nhuggingface-llama-recipes\nTool use with transformers\nLLaMA-3.1 supports multiple tool use formats. You can see a full guide to prompt formatting\nhere\n.\nTool use is also supported through\nchat templates\nin Transformers. \nHere is a quick example showing a single simple tool:\n# First, define a tool\ndef\nget_current_temperature\n(\nlocation:\nstr\n) ->\nfloat\n:\n\"\"\"\nGet the current temperature at a location.\nArgs:\nlocation: The location to get the temperature for, in the format \"City, Country\"\nReturns:\nThe current temperature at the specified location in the specified units, as a float.\n\"\"\"\nreturn\n22.\n# A real function should probably actually get the temperature!\n# Next, create a chat and apply the chat template\nmessages = [\n  {\n\"role\"\n:\n\"system\"\n,\n\"content\"\n:\n\"You are a bot that responds to weather queries.\"\n},\n  {\n\"role\"\n:\n\"user\"\n,\n\"content\"\n:\n\"Hey, what's the temperature in Paris right now?\"\n}\n]\n\ninputs = tokenizer.apply_chat_template(messages, tools=[get_current_temperature], add_generation_prompt=\nTrue\n)\nYou can then generate text from this input as normal. If the model generates a tool call, you should add it to the chat like so:\ntool_call = {\n\"name\"\n:\n\"get_current_temperature\"\n,\n\"arguments\"\n: {\n\"location\"\n:\n\"Paris, France\"\n}}\nmessages.append({\n\"role\"\n:\n\"assistant\"\n,\n\"tool_calls\"\n: [{\n\"type\"\n:\n\"function\"\n,\n\"function\"\n: tool_call}]})\nand then call the tool and append the result, with the\ntool\nrole, like so:\nmessages.append({\n\"role\"\n:\n\"tool\"\n,\n\"name\"\n:\n\"get_current_temperature\"\n,\n\"content\"\n:\n\"22.0\"\n})\nAfter that, you can\ngenerate()\nagain to let the model use the tool result in the chat. Note that this was a very brief introduction to tool calling - for more information,\nsee the\nLLaMA prompt format docs\nand the Transformers\ntool use documentation\n.\nUse with\nllama\nPlease, follow the instructions in the\nrepository\nTo download Original checkpoints, see the example command below leveraging\nhuggingface-cli\n:\nhuggingface-cli download meta-llama/Meta-Llama-3.1-8B-Instruct --include \"original/*\" --local-dir Meta-Llama-3.1-8B-Instruct\nHardware and Software\nTraining Factors\nWe used custom training libraries, Meta's custom built GPU cluster, and production infrastructure for pretraining. Fine-tuning, annotation, and evaluation were also performed on production infrastructure.\nTraining utilized a cumulative of\n39.3M GPU hours of computation on H100-80GB (TDP of 700W) type hardware, per the table below. Training time is the total GPU time required for training each model and power consumption is the peak power capacity per GPU device used, adjusted for power usage efficiency.\nTraining Greenhouse Gas Emissions\nEstimated total location-based greenhouse gas emissions were\n11,390\ntons CO2eq for training. Since 2020, Meta has maintained net zero greenhouse gas emissions in its global operations and matched 100% o"
+    },
+    {
+      "type": "DatasetPackage",
+      "spdxId": "SPDXRef-DATASET-TRAIN",
+      "name": "See model card",
+      "datasetType": "text",
+      "intendedUse": "Pretraining"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DESCRIBES",
+      "from": "SPDXRef-DOCUMENT",
+      "to": "SPDXRef-MODEL",
+      "relationshipType": "describes"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0000",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0000",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0001",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0001",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0002",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0002",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0003",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0003",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0004",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0004",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0005",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0005",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0006",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0006",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0007",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0007",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0008",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0008",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0009",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0009",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0010",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0010",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0011",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0011",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0012",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0012",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0013",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0013",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0014",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0014",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0015",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0015",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0016",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0016",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-TRANSFORMERS",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-TRANSFORMERS",
+      "relationshipType": "dependsOn"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-TORCH",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-TORCH",
+      "relationshipType": "dependsOn"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DECLARED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-DECLARED",
+      "relationshipType": "hasDeclaredLicense"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONCLUDED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "relationshipType": "hasConcludedLicense"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-MODEL-TRAINEDON",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-DATASET-TRAIN",
+      "relationshipType": "trainedOn"
+    }
+  ],
+  "rootElement": [
+    "SPDXRef-MODEL"
+  ],
+  "externalRef": []
+}
