@@ -1,0 +1,345 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "type": "SpdxDocument",
+  "spdxId": "SPDXRef-DOCUMENT",
+  "name": "AI-BOM for Qwen/Qwen3-4B-Thinking-2507",
+  "profileConformance": [
+    "core",
+    "software",
+    "simpleLicensing",
+    "ai",
+    "dataset"
+  ],
+  "dataLicense": {
+    "type": "SimpleLicensingText",
+    "spdxId": "SPDXRef-DATA-LICENSE",
+    "licenseText": "CC0-1.0"
+  },
+  "creationInfo": {
+    "type": "CreationInfo",
+    "created": "2025-08-12T02:18:30Z",
+    "specVersion": "3.0.1",
+    "createdBy": [
+      {
+        "type": "Organization",
+        "spdxId": "SPDXRef-ORG",
+        "name": "Hugging Face Hub Scraper (example)"
+      }
+    ],
+    "createdUsing": [
+      {
+        "type": "Tool",
+        "spdxId": "SPDXRef-TOOL",
+        "name": "hf2spdx-ai-bom",
+        "version": "1.1.0"
+      }
+    ]
+  },
+  "element": [
+    {
+      "type": "AIPackage",
+      "spdxId": "SPDXRef-MODEL",
+      "name": "Qwen/Qwen3-4B-Thinking-2507",
+      "description": "text-generation model from Qwen/Qwen3-4B-Thinking-2507",
+      "packageVersion": "768f209d9ea81521153ed38c47d515654e938aea",
+      "downloadLocation": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507",
+      "standardCompliance": [],
+      "typeOfModel": "Transformer",
+      "domain": [
+        "NLP"
+      ],
+      "hyperparameter": {},
+      "modelExplainability": null,
+      "informationAboutTraining": "See model card",
+      "modelDataPreprocessing": "Not specified",
+      "metric": [],
+      "safetyRiskAssessment": [],
+      "useSensitivePersonalInformation": false,
+      "energyConsumption": []
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0000",
+      "name": ".gitattributes",
+      "fileKind": "text",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/resolve/main/.gitattributes"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0001",
+      "name": "LICENSE",
+      "fileKind": "text",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/resolve/main/LICENSE"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0002",
+      "name": "README.md",
+      "fileKind": "text",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/resolve/main/README.md"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0003",
+      "name": "config.json",
+      "fileKind": "text",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/resolve/main/config.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0004",
+      "name": "generation_config.json",
+      "fileKind": "text",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/resolve/main/generation_config.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0005",
+      "name": "merges.txt",
+      "fileKind": "text",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/resolve/main/merges.txt"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0006",
+      "name": "model-00001-of-00003.safetensors",
+      "fileKind": "binary",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "98178c1cddbca8ad76102afdbf76e4df79b64b82377ad4dca34c755cac00571a"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/resolve/main/model-00001-of-00003.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0007",
+      "name": "model-00002-of-00003.safetensors",
+      "fileKind": "binary",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "57b5bd1f667d420350f169342a90b50e5ffc2aa202ba1819da1af3367ff2261f"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/resolve/main/model-00002-of-00003.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0008",
+      "name": "model-00003-of-00003.safetensors",
+      "fileKind": "binary",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "e3cccb84e8926f3f18c334465639939a68af310b0729938fccc2de66a9a31953"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/resolve/main/model-00003-of-00003.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0009",
+      "name": "model.safetensors.index.json",
+      "fileKind": "text",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/resolve/main/model.safetensors.index.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0010",
+      "name": "tokenizer.json",
+      "fileKind": "text",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/resolve/main/tokenizer.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0011",
+      "name": "tokenizer_config.json",
+      "fileKind": "text",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/resolve/main/tokenizer_config.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0012",
+      "name": "vocab.json",
+      "fileKind": "text",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/resolve/main/vocab.json"
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-TRANSFORMERS",
+      "name": "transformers",
+      "packageVersion": null,
+      "downloadLocation": "https://pypi.org/project/transformers/",
+      "packageUrl": "pkg:pypi/transformers"
+    },
+    {
+      "type": "LicenseExpression",
+      "spdxId": "SPDXRef-LIC-MODEL-DECLARED",
+      "licenseExpression": "Apache-2.0"
+    },
+    {
+      "type": "LicenseExpression",
+      "spdxId": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "licenseExpression": "Apache-2.0"
+    },
+    {
+      "type": "DatasetPackage",
+      "spdxId": "SPDXRef-DATASET-TRAIN",
+      "name": "See model card",
+      "datasetType": "text",
+      "intendedUse": "Pretraining",
+      "datasetAvailability": "unspecified"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DESCRIBES",
+      "from": "SPDXRef-DOCUMENT",
+      "to": "SPDXRef-MODEL",
+      "relationshipType": "describes"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0000",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0000",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0001",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0001",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0002",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0002",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0003",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0003",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0004",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0004",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0005",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0005",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0006",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0006",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0007",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0007",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0008",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0008",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0009",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0009",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0010",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0010",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0011",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0011",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0012",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0012",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-TRANSFORMERS",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-TRANSFORMERS",
+      "relationshipType": "dependsOn"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-LIC-DECLARED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-DECLARED",
+      "relationshipType": "hasDeclaredLicense"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-LIC-CONCLUDED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "relationshipType": "hasConcludedLicense"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-MODEL-TRAINEDON",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-DATASET-TRAIN",
+      "relationshipType": "trainedOn"
+    }
+  ],
+  "rootElement": [
+    "SPDXRef-MODEL"
+  ],
+  "externalRef": []
+}
