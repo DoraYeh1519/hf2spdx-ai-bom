@@ -1,0 +1,713 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "type": "SpdxDocument",
+  "spdxId": "SPDXRef-DOCUMENT",
+  "name": "AI-BOM for baichuan-inc/Baichuan-M2-32B",
+  "profileConformance": [
+    "core",
+    "software",
+    "simpleLicensing",
+    "ai"
+  ],
+  "dataLicense": {
+    "type": "LicenseExpression",
+    "spdxId": "SPDXRef-DATA-LICENSE",
+    "licenseExpression": "CC0-1.0"
+  },
+  "creationInfo": {
+    "type": "CreationInfo",
+    "created": "2025-08-12T06:09:00Z",
+    "specVersion": "3.0.1",
+    "createdBy": [
+      {
+        "type": "Organization",
+        "spdxId": "SPDXRef-ORG",
+        "name": "Hugging Face Hub Scraper (example)"
+      }
+    ],
+    "createdUsing": [
+      {
+        "type": "Tool",
+        "spdxId": "SPDXRef-TOOL",
+        "name": "hf2spdx-ai-bom",
+        "version": "1.8.2"
+      }
+    ]
+  },
+  "element": [
+    {
+      "type": "AIPackage",
+      "spdxId": "SPDXRef-MODEL",
+      "name": "baichuan-inc/Baichuan-M2-32B",
+      "packageVersion": "ebd3cf50aa02061a941f69e78d365d5620c5b5ac",
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/tree/ebd3cf50aa02061a941f69e78d365d5620c5b5ac",
+      "description": "text-generation model on Hugging Face"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0000",
+      "name": ".gitattributes",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/.gitattributes"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0001",
+      "name": "LICENSE",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/LICENSE"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0002",
+      "name": "README.md",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "10ba172295236a6eaf60d7e5305ec8f461c3efcee4d545b3b699b77fb1646b14"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/README.md"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0003",
+      "name": "added_tokens.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/added_tokens.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0004",
+      "name": "config.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "06c148ab69ce73792c318b2b635566b641d49d4c4f550dec6e78cd24e2ee6670"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/config.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0005",
+      "name": "draft/config.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "653ea9d040a4047955ad1c1af5429bb7e1e3d0e804b2b70830bc0fd83238b2bb"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/draft/config.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0006",
+      "name": "draft/pytorch_model.bin",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "f80f49be625de0c703ae279805a764b07377bae6d2a31468e75e12fbf2c17298"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/draft/pytorch_model.bin"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0007",
+      "name": "draft/qwen2.py",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "f04c8cdabd702353eac54c95712ce1df5d569b8b39f0a462eed3ebdcfa37ae4a"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/draft/qwen2.py"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0008",
+      "name": "generation_config.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "81051cd3f6e77013827148d0b8a6ead93f8ac390d5ab805f849199f0af6a08db"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/generation_config.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0009",
+      "name": "merges.txt",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/merges.txt"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0010",
+      "name": "model-00001-of-00014.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "0d3633c1fb7f9a4a3e754006e91b4839517119fc0fd345a8464e42a9b70c7c29"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/model-00001-of-00014.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0011",
+      "name": "model-00002-of-00014.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "b06acbc4542e982674d63bc00940ca694a3c0f77937070dcf14bd4c1d73db89e"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/model-00002-of-00014.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0012",
+      "name": "model-00003-of-00014.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "c19e1abed43b5fd19fb08dd1573cf48b874014b30c3da3b9a3c0ffc1259f60fc"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/model-00003-of-00014.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0013",
+      "name": "model-00004-of-00014.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "3720463ffdb4a412f1723c5a337438f1ed3f20357f348ff41a6d6b31a1171940"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/model-00004-of-00014.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0014",
+      "name": "model-00005-of-00014.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "b3e6a4ce7d3d177cc4e9e684800f20a17dc31a75c72978e06feeb82865b34ede"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/model-00005-of-00014.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0015",
+      "name": "model-00006-of-00014.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "c8ce215324ad309001feea1029ed305c134ea7d1aee55475e6c79950778a2bf9"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/model-00006-of-00014.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0016",
+      "name": "model-00007-of-00014.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "db6c797ad666b16b283d6e0cd5000796ba1798e74914398e61d421722feb6af2"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/model-00007-of-00014.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0017",
+      "name": "model-00008-of-00014.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "1fcd54826b08c021d3d991b07ea7f7b0fb0cf03b39efa61dc1a4e6db2c37d9a9"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/model-00008-of-00014.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0018",
+      "name": "model-00009-of-00014.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "6c8e648d124f8864718cc5c189a1e6e30c3726b706c78ff12fbbf4853f72c3f0"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/model-00009-of-00014.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0019",
+      "name": "model-00010-of-00014.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "e74feb5ed5c1bc6816f3d386484486a1f7da03a5294254823e9c5b11eb4ab886"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/model-00010-of-00014.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0020",
+      "name": "model-00011-of-00014.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "4d7b240005b6edeaf327305bf22eeb740265029b2364c7d5ef620dc2a7e17582"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/model-00011-of-00014.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0021",
+      "name": "model-00012-of-00014.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "833573d88519833757533967f272255a8cfcbfba27c7ecfd3ce3985b5f77b3dd"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/model-00012-of-00014.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0022",
+      "name": "model-00013-of-00014.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "7d53458f7d7013dfec2aa0dd735f38f6dba5f257d4e5b13a1aea0a27e82b6ed3"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/model-00013-of-00014.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0023",
+      "name": "model-00014-of-00014.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "d1d84776cd52292fb1f409340d04476209aa17d1bbdd26c793422bef4379e331"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/model-00014-of-00014.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0024",
+      "name": "model.safetensors.index.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "e6548816f7ae8cd9fc353a20737f640ad32db6eff13a8c097246084c3207300f"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/model.safetensors.index.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0025",
+      "name": "special_tokens_map.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/special_tokens_map.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0026",
+      "name": "tokenizer.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/tokenizer.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0027",
+      "name": "tokenizer_config.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "1c69f37a2fa2c8a94226c72ded9882037cabb940775dfe79a48b4f64e201219d"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/tokenizer_config.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0028",
+      "name": "vocab.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/baichuan-inc/Baichuan-M2-32B/resolve/ebd3cf50aa02061a941f69e78d365d5620c5b5ac/vocab.json"
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-TORCH",
+      "name": "torch",
+      "downloadLocation": "https://pypi.org/project/torch/",
+      "packageUrl": "pkg:pypi/torch"
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-TRANSFORMERS",
+      "name": "transformers",
+      "downloadLocation": "https://pypi.org/project/transformers/",
+      "packageUrl": "pkg:pypi/transformers"
+    },
+    {
+      "type": "LicenseExpression",
+      "spdxId": "SPDXRef-LIC-MODEL-DECLARED",
+      "licenseExpression": "Apache-2.0"
+    },
+    {
+      "type": "LicenseExpression",
+      "spdxId": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "licenseExpression": "Apache-2.0"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DESCRIBES",
+      "from": "SPDXRef-DOCUMENT",
+      "to": "SPDXRef-MODEL",
+      "relationshipType": "describes"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0000",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0000",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0001",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0001",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0002",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0002",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0003",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0003",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0004",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0004",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0005",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0005",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0006",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0006",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0007",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0007",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0008",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0008",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0009",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0009",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0010",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0010",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0011",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0011",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0012",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0012",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0013",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0013",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0014",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0014",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0015",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0015",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0016",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0016",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0017",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0017",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0018",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0018",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0019",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0019",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0020",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0020",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0021",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0021",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0022",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0022",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0023",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0023",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0024",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0024",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0025",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0025",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0026",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0026",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0027",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0027",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0028",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0028",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-TORCH",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-TORCH",
+      "relationshipType": "dependsOn"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-TRANSFORMERS",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-TRANSFORMERS",
+      "relationshipType": "dependsOn"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DECLARED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-DECLARED",
+      "relationshipType": "hasDeclaredLicense"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONCLUDED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "relationshipType": "hasConcludedLicense"
+    }
+  ],
+  "rootElement": [
+    "SPDXRef-MODEL"
+  ],
+  "externalRef": []
+}

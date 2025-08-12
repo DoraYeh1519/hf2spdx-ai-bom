@@ -1,0 +1,2203 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "type": "SpdxDocument",
+  "spdxId": "SPDXRef-DOCUMENT",
+  "name": "AI-BOM for zai-org/GLM-4.5",
+  "profileConformance": [
+    "core",
+    "software",
+    "simpleLicensing",
+    "ai"
+  ],
+  "dataLicense": {
+    "type": "LicenseExpression",
+    "spdxId": "SPDXRef-DATA-LICENSE",
+    "licenseExpression": "CC0-1.0"
+  },
+  "creationInfo": {
+    "type": "CreationInfo",
+    "created": "2025-08-12T05:50:00Z",
+    "specVersion": "3.0.1",
+    "createdBy": [
+      {
+        "type": "Organization",
+        "spdxId": "SPDXRef-ORG",
+        "name": "Hugging Face Hub Scraper (example)"
+      }
+    ],
+    "createdUsing": [
+      {
+        "type": "Tool",
+        "spdxId": "SPDXRef-TOOL",
+        "name": "hf2spdx-ai-bom",
+        "version": "1.8.0"
+      }
+    ]
+  },
+  "element": [
+    {
+      "type": "AIPackage",
+      "spdxId": "SPDXRef-MODEL",
+      "name": "zai-org/GLM-4.5",
+      "packageVersion": "cbb2c7cfb52fa128a9660cb1a7a78e017899e115",
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/tree/cbb2c7cfb52fa128a9660cb1a7a78e017899e115",
+      "description": "text-generation model on Hugging Face"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0000",
+      "name": ".gitattributes",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/.gitattributes"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0001",
+      "name": "README.md",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "b88456f5d679312860924870b8c557e578d18c7e3612b4f9d1ea22be38ea95c3"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/README.md"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0002",
+      "name": "chat_template.jinja",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "44f815868bf02fa458dd2f741a338046f4bf45f398eb6d067766726b9d96cce3"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/chat_template.jinja"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0003",
+      "name": "config.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "a5dbd07371a8a51b0013a63a7a70543a7094af1a9598812b537133e6da78dda7"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/config.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0004",
+      "name": "generation_config.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "06ac18cb0e733da062bdb1d260247d52b1f6c4b10785fc733402f22a510da05d"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/generation_config.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0005",
+      "name": "model-00001-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "c3ec0ed85ee95cae5c9b76a7af7272a23169b81705c177c0212f65b24d4b8b41"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00001-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0006",
+      "name": "model-00002-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "8c5ed321e28aa0c3d31c1b9a9ac0e5666d915ffd89dff216a34427b33fb03c55"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00002-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0007",
+      "name": "model-00003-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "c93996707aea7dc24a24e97eb72a57fbfd2d197a3cab970adf334ed28ae67abb"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00003-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0008",
+      "name": "model-00004-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "c76581125a03a274386d8d0cd0e2c84242135bd0b728c33a3b311e1967b53ab7"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00004-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0009",
+      "name": "model-00005-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "72cdb466003372faf78d647ffec247c33f0f2346177147ecce95e8e50b7b678a"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00005-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0010",
+      "name": "model-00006-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "e643fc9c4b55c9861a965a744b85ae54453275d7a4dfdfad0ca7a9517ad18011"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00006-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0011",
+      "name": "model-00007-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "6145a87fc2f1e30123293802181b1c684ac710cdd6c929b2dab145154bbd9b7c"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00007-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0012",
+      "name": "model-00008-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "22c5cfd2f82adabf3db579a5ff217506d0f5e1b7211492ef73b2209bb138f41f"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00008-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0013",
+      "name": "model-00009-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "82e37371e81407fd7b5cd543532c6bdca2bf865a2ee567e8f731777b19a9bd43"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00009-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0014",
+      "name": "model-00010-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "afa2a54871e04125363468a6ca024de373ab38edb6f58b657913c2cd17ce5764"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00010-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0015",
+      "name": "model-00011-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "049c06bc5a93318dcf91a7c60109c08e8df95a9a5130196a683434d9ede437f8"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00011-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0016",
+      "name": "model-00012-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "fa88ebbabdc43302cf19ac2d81b27f2b16a3154fdd9ed096040615fa65013805"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00012-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0017",
+      "name": "model-00013-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "b5a222612fd47c6ca8166275e66e723819baa3068eee2e1694f326066ac67ce4"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00013-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0018",
+      "name": "model-00014-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "9b8d2da26be63fe9764a4a4cc6a00e58f406aeeda404c31b61612e5e74f9caf8"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00014-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0019",
+      "name": "model-00015-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "1f832318ea861a4841a3ce0886eaa0ca7dee9729f74b5141634d7d7e9d6f2ba9"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00015-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0020",
+      "name": "model-00016-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "d344913210c96c6695341094e7da2817ccb94f3946ee9698a76eaaaaf60c1b44"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00016-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0021",
+      "name": "model-00017-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "31a4ce3054f3670fd5a7d1e71f502318e65ebb51ee629bd5eccd98adc736d4f6"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00017-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0022",
+      "name": "model-00018-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "006012f1bf7dd33271f12626000418c43e127b56bc70f3a5e314656ad717f424"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00018-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0023",
+      "name": "model-00019-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "067349f582d85e7bd9b0326b82ee32cede246cf359b4e0b4c6cfe3f95caf8e21"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00019-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0024",
+      "name": "model-00020-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "c21f395f920d50618e06b473f64971789746d86f3e20e2eab0483562ced51b2a"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00020-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0025",
+      "name": "model-00021-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "3bde74ebffd96f550117c7b297198eadf75fb8c99603b6e78fd6d6bea62a8da8"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00021-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0026",
+      "name": "model-00022-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "7f9520583b0947a4bc9e3b22ee93dac2f19256f4f889ae17a5239e4275528db8"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00022-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0027",
+      "name": "model-00023-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "16613154e9ab024458f9acd079d7345db4a05593c5a596176640d68053665753"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00023-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0028",
+      "name": "model-00024-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "b08d17d951a625b2cac46fcf15d7e4b6a99a28f91befabeb7d361fa7cac01e7b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00024-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0029",
+      "name": "model-00025-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "dd5cbe90ff83f0b2b91c92d5ba2e100263e8306ce3f6381bdd54051a6a8b6c3d"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00025-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0030",
+      "name": "model-00026-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "1ea400d62257ef3f0412c8496c955a9ec7052fa4761dfbf4b35905aa04e73318"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00026-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0031",
+      "name": "model-00027-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "012d00adf402e18bb9a900d5dc549c2c45f047eb486ef2a44517a8e532dd9f2b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00027-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0032",
+      "name": "model-00028-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "63de598020c34be07e77fb82319760bd539da4adfc48eecf83f64cc85ac35196"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00028-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0033",
+      "name": "model-00029-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "3ebe5474925c2edf5dea140224c9d506147f44c5accded8a854edb7538e88d3a"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00029-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0034",
+      "name": "model-00030-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "272627d9996b600a934e39c285914c04949e9e9ecbde8ddc2cdc228af5a0be42"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00030-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0035",
+      "name": "model-00031-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "50b8a452aa3db68fa81daa96d04af6b68aaaf2d9565e2b65ce427fbf821d6573"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00031-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0036",
+      "name": "model-00032-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "12bc051e0ed087b3bcfaba48ecc5a2dab369ec95d0bc43b779daec146b9ab45b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00032-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0037",
+      "name": "model-00033-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "d506e1a1ac6faea9b46ece2be12d1d83d3e6987d8c836b0deebdb77a96baeac0"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00033-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0038",
+      "name": "model-00034-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "22b67f3dfb65d866d6dadeb3b33709641bdf93b34e5cd50ab480f08ca2fe1ab2"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00034-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0039",
+      "name": "model-00035-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "ab5187967ed92ebd28040749a6735e6dc5b5b7a921f26ecc320db909b1af3fab"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00035-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0040",
+      "name": "model-00036-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "5babc5b903c4e8f30a014d6f63fe679331776eb8e19e1807099604085e506349"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00036-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0041",
+      "name": "model-00037-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "8696f7e938ddd6a8a578467302b58907106add63ec9d06ada3f58db1e1f35b8a"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00037-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0042",
+      "name": "model-00038-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "71ad1eda9008b3cca972e8c7637aba3bf598daba0f5f7146fcf70656d6807291"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00038-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0043",
+      "name": "model-00039-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "dbc174288c0a6dfe1ed30e7b9d0b14b4008cef1c44121ecba5d3fc5711f9ffcf"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00039-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0044",
+      "name": "model-00040-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "33bc1f191e6ece41ac959fae053e56c8d9b7aae4e248396db308df192b0dfdca"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00040-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0045",
+      "name": "model-00041-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "1086567592913cf955a099e6bd36d69803197a5e737895e82d27e139ee797454"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00041-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0046",
+      "name": "model-00042-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "bd01aed8bd9f3875c999a912c10806379df34083c8d5ea86dbeed586218404e5"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00042-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0047",
+      "name": "model-00043-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "3757974e615f565fb9179ca721617f92c1c46e02cb27de2173ccf69851a4bbe5"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00043-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0048",
+      "name": "model-00044-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "333883124d4baa2d0ad5527832875418c574a9bb9d022184573d73da6b0450bb"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00044-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0049",
+      "name": "model-00045-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "2347fda76deadd548681a1b96d6868eed8c00a37808ece8ff71011a54989c091"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00045-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0050",
+      "name": "model-00046-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "3be1386859ce861008c1f5333277a91e9b76dd522f4316edc25d5bf48e18934b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00046-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0051",
+      "name": "model-00047-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "761cf240ce8a79b8ccdf573b6726702b78dd528e40649a87fbf8f780369ee14b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00047-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0052",
+      "name": "model-00048-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "754ae933c03a3c88bf4f46b2c2c74ca0340cec635a1b37a6dabc19639aef4573"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00048-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0053",
+      "name": "model-00049-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "d6d536c990566070af88255c2f012488e52e923ab463ee24163408e3e39bed56"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00049-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0054",
+      "name": "model-00050-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "5def8db9af1162a0af3532726fb9c51b4a715107d23fc3b1c7a533ace8b526d8"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00050-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0055",
+      "name": "model-00051-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "c5cb2a9255ede6cf9b4bb3481e9a68207c51af273121c72950c0719b00b6adb5"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00051-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0056",
+      "name": "model-00052-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "477e80817f20318d75644a9e6ee259dfa3397b61dcf3002fd3d88bff4f96067b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00052-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0057",
+      "name": "model-00053-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "09236431661fff9166dbe839dafd37e3f9c1da9553abc15510f7a347071ec6b4"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00053-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0058",
+      "name": "model-00054-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "f1e3b985addf4664e9e4c06c5ea70ed9560572712d35fea72f84f56291cda876"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00054-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0059",
+      "name": "model-00055-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "bd4f7443ab946e1909729f0b89172219a51d517228278bcd64dce3ac91ecd7f6"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00055-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0060",
+      "name": "model-00056-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "4922b01ec5a8ff7b0b396793ec1469758bd6a8f764addf9de78b0ea6028c83fe"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00056-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0061",
+      "name": "model-00057-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "f208efecaead3e9e64c6e60c881d81d04db6f30c482497bd854500cef0e48e6d"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00057-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0062",
+      "name": "model-00058-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "09ffbaa56d5f0f395c43869fec71e221f8be5448b900ef7450477521a8c26186"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00058-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0063",
+      "name": "model-00059-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "981536347ae1d20f852e98639ee4fe7f2d4f6c20b4c9c8ab86983b81480fa79f"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00059-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0064",
+      "name": "model-00060-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "7cb54647de5b032d78539c298887bb350f5d0eef95b01b1f85dafc7d90ab89f7"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00060-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0065",
+      "name": "model-00061-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "2a25bdf49e05d70ed871eb422ef964ce6bb7c7976224e5c981eca4d823a7450a"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00061-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0066",
+      "name": "model-00062-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "6193ade7e5ce6068b1d68128a3f7d6034e7c0a00096ae634b79495938cb57f78"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00062-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0067",
+      "name": "model-00063-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "a2ea79604320c3a63a92aaea99feb087abb71cd143b4d6d866714bf2b88e6787"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00063-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0068",
+      "name": "model-00064-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "7f5c79df17581a2a053989e9a68b2721edab10317220224e6a4bae0d4b685c34"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00064-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0069",
+      "name": "model-00065-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "e7d0bc11f2cb4e27795af3c991d41806a0ba193136b260732cc6e0575a672f21"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00065-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0070",
+      "name": "model-00066-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "0141817eb441c5e6482ad652124b6bf57eff5bffd482af6b462a0659fd81bf1c"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00066-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0071",
+      "name": "model-00067-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "ef13cf68794ccf7f480af779f663cbfc035f1969cb0c3b2c405c157ab4a11263"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00067-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0072",
+      "name": "model-00068-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "e96e70e883199f7b9a405d7b3779f1d7f042456b8d4fb87a49b60dc9917b7159"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00068-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0073",
+      "name": "model-00069-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "a3f780af0c2585122e56bbdd92b67bc4533a71e4d7ccb72b6c3077086540a1ef"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00069-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0074",
+      "name": "model-00070-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "ea43fb7dd55a9f9c545f39b893fa2cc5daaa3c21261a2f07ccf0294380f9171a"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00070-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0075",
+      "name": "model-00071-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "af29faa01ab52323979c6edf481a66e729d84bc394166f1e7dd06e5e4c3e3aad"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00071-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0076",
+      "name": "model-00072-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "052b73b892921c90c6c167e0545f139360fccead36f495a086fc3b7a38eaeacb"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00072-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0077",
+      "name": "model-00073-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "61b719c8a1b401dcb2bc1e7932ae120306004ca9fd8a831f1a09f545112db3e6"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00073-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0078",
+      "name": "model-00074-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "7b5b2357cd1140e923c0940edce64a728da3ad9a95a295734ef6d134dd86ee30"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00074-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0079",
+      "name": "model-00075-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "06347eff2172048d92c92d1ac6f2ef73724fe3f9e2a680a6d2528d558abd8f54"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00075-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0080",
+      "name": "model-00076-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "92139d1549083249c060eb7df2cfab7eabc4b48df7740cfb6da6ca01f2fab07b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00076-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0081",
+      "name": "model-00077-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "f83de3668f05405afb76e9fd38b463e838bee6c923082932f9b233c1e2999a5d"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00077-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0082",
+      "name": "model-00078-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "4e38039f00abf6b589910ce53c3b6f289b76da58d7c1116ca7f2f5761a725970"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00078-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0083",
+      "name": "model-00079-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "edb662c03ea9100602610460cda218aaaf8c211a9eb7946b4f1ce1bd8b88f336"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00079-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0084",
+      "name": "model-00080-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "99ded1950bb973b5602e883c88a236079b26355c8e7eeae73cca44f597653096"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00080-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0085",
+      "name": "model-00081-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "1888c4eddb11e3fb152dc0cfc4eaf2e3473fcd79bcf412468b3c1f68b06e95c6"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00081-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0086",
+      "name": "model-00082-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "9e540a950da1d7bcceb4a6a42c256132857b365e8db32ecda48f778996bec5a0"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00082-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0087",
+      "name": "model-00083-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "a732c84b796ac322f71887e554418c71293a6953acd55b974f53102ab8dee88b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00083-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0088",
+      "name": "model-00084-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "ad2104534f965d287f4e7a0caa1e5f87367c5300377b9e5655c09349218efc1a"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00084-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0089",
+      "name": "model-00085-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "08b26a54b7927c94a51cdd714381df95dba4a548c89c258185e22b438747d9b1"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00085-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0090",
+      "name": "model-00086-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "bdb4167f124db49fe33bf5f23b88284142c1c04a1b3220f2d9ee7a2ee80e67df"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00086-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0091",
+      "name": "model-00087-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "a8f78f3de2c13a7e5bfdb963008ef4cf179a1dd6a15d1721454d441b3acc06d6"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00087-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0092",
+      "name": "model-00088-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "1a1599e223edbbbdc03a2987665d636c53c12df5d798cbade1bd4cc1ce36bb6b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00088-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0093",
+      "name": "model-00089-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "55c14a81092ddd8567b8e1f6083c6e89b16a819b528ec0f0eb8c0404e9f1ada4"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00089-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0094",
+      "name": "model-00090-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "88df60618ac4aa6b334f173947ca911f3f91d7ff104c4acd94bc3b266ec249d6"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00090-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0095",
+      "name": "model-00091-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "4498be3e0e216922f10185d2aa3376a6f1562f3f22b53d6dd5c9ceeed658d3e4"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00091-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0096",
+      "name": "model-00092-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "1747f9cb14ce71b4744855b59ecdfbe0ce9e43315cb95d43a5e5d601abe3dcb1"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00092-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0097",
+      "name": "model-00093-of-00093.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "084c2cfc3045f744439c646e0470bf8b8ebcc6404e0ede1642efb25b0fbe9c3b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model-00093-of-00093.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0098",
+      "name": "model.safetensors.index.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "d529739c7c3aa46a13a0afd01f693cb1953b07460d0bce166855fde0b93e3ed8"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/model.safetensors.index.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0099",
+      "name": "tokenizer.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "9340665016419c825c4bdabbcc9acc43b7ca2c68ce142724afa829abb1be5efd"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/tokenizer.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0100",
+      "name": "tokenizer_config.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "27d01309c0ae7b5edb6511daabfcbf772b60e21c65cbb74d059acc76796f7897"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/zai-org/GLM-4.5/resolve/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/tokenizer_config.json"
+    },
+    {
+      "type": "LicenseExpression",
+      "spdxId": "SPDXRef-LIC-MODEL-DECLARED",
+      "licenseExpression": "MIT"
+    },
+    {
+      "type": "LicenseExpression",
+      "spdxId": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "licenseExpression": "MIT"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DESCRIBES",
+      "from": "SPDXRef-DOCUMENT",
+      "to": "SPDXRef-MODEL",
+      "relationshipType": "describes"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0000",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0000",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0001",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0001",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0002",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0002",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0003",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0003",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0004",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0004",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0005",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0005",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0006",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0006",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0007",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0007",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0008",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0008",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0009",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0009",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0010",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0010",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0011",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0011",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0012",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0012",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0013",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0013",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0014",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0014",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0015",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0015",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0016",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0016",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0017",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0017",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0018",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0018",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0019",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0019",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0020",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0020",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0021",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0021",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0022",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0022",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0023",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0023",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0024",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0024",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0025",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0025",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0026",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0026",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0027",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0027",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0028",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0028",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0029",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0029",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0030",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0030",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0031",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0031",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0032",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0032",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0033",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0033",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0034",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0034",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0035",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0035",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0036",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0036",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0037",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0037",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0038",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0038",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0039",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0039",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0040",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0040",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0041",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0041",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0042",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0042",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0043",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0043",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0044",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0044",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0045",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0045",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0046",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0046",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0047",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0047",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0048",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0048",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0049",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0049",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0050",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0050",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0051",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0051",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0052",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0052",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0053",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0053",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0054",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0054",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0055",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0055",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0056",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0056",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0057",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0057",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0058",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0058",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0059",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0059",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0060",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0060",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0061",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0061",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0062",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0062",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0063",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0063",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0064",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0064",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0065",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0065",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0066",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0066",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0067",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0067",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0068",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0068",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0069",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0069",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0070",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0070",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0071",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0071",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0072",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0072",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0073",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0073",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0074",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0074",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0075",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0075",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0076",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0076",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0077",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0077",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0078",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0078",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0079",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0079",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0080",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0080",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0081",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0081",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0082",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0082",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0083",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0083",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0084",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0084",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0085",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0085",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0086",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0086",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0087",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0087",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0088",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0088",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0089",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0089",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0090",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0090",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0091",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0091",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0092",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0092",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0093",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0093",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0094",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0094",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0095",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0095",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0096",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0096",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0097",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0097",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0098",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0098",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0099",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0099",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0100",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0100",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DECLARED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-DECLARED",
+      "relationshipType": "hasDeclaredLicense"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONCLUDED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "relationshipType": "hasConcludedLicense"
+    }
+  ],
+  "rootElement": [
+    "SPDXRef-MODEL"
+  ],
+  "externalRef": [
+    {
+      "type": "ExternalRef",
+      "externalRefType": "arXiv",
+      "locator": "2508.06471"
+    }
+  ]
+}

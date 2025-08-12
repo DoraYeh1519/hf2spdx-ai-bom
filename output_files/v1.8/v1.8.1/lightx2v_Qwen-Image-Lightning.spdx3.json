@@ -1,0 +1,188 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "type": "SpdxDocument",
+  "spdxId": "SPDXRef-DOCUMENT",
+  "name": "AI-BOM for lightx2v/Qwen-Image-Lightning",
+  "profileConformance": [
+    "core",
+    "software",
+    "simpleLicensing",
+    "ai"
+  ],
+  "dataLicense": {
+    "type": "LicenseExpression",
+    "spdxId": "SPDXRef-DATA-LICENSE",
+    "licenseExpression": "CC0-1.0"
+  },
+  "creationInfo": {
+    "type": "CreationInfo",
+    "created": "2025-08-12T05:50:04Z",
+    "specVersion": "3.0.1",
+    "createdBy": [
+      {
+        "type": "Organization",
+        "spdxId": "SPDXRef-ORG",
+        "name": "Hugging Face Hub Scraper (example)"
+      }
+    ],
+    "createdUsing": [
+      {
+        "type": "Tool",
+        "spdxId": "SPDXRef-TOOL",
+        "name": "hf2spdx-ai-bom",
+        "version": "1.8.0"
+      }
+    ]
+  },
+  "element": [
+    {
+      "type": "AIPackage",
+      "spdxId": "SPDXRef-MODEL",
+      "name": "lightx2v/Qwen-Image-Lightning",
+      "packageVersion": "374cc3fcb25225a3540b150f3c52ab114daafbcb",
+      "downloadLocation": "https://huggingface.co/lightx2v/Qwen-Image-Lightning/tree/374cc3fcb25225a3540b150f3c52ab114daafbcb",
+      "description": "text-to-image model on Hugging Face"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0000",
+      "name": ".gitattributes",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/374cc3fcb25225a3540b150f3c52ab114daafbcb/.gitattributes"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0001",
+      "name": "Qwen-Image-Lightning-4steps-V1.0.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "9526e90d71c4290392feeccf3c2172cb77ab3a489f1faeb956637f97acb4c8b1"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/374cc3fcb25225a3540b150f3c52ab114daafbcb/Qwen-Image-Lightning-4steps-V1.0.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0002",
+      "name": "Qwen-Image-Lightning-8steps-V1.0.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "07b5a999881437f63124979844ba1949ce2438f65b6220628a196a7d30a4fff9"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/374cc3fcb25225a3540b150f3c52ab114daafbcb/Qwen-Image-Lightning-8steps-V1.0.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0003",
+      "name": "README.md",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "9dcb9641d0f3b4885ad2da9f88b04de3fdad4cad24333682accfe5a995315462"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/374cc3fcb25225a3540b150f3c52ab114daafbcb/README.md"
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-DIFFUSERS",
+      "name": "diffusers",
+      "downloadLocation": "https://pypi.org/project/diffusers/",
+      "packageUrl": "pkg:pypi/diffusers"
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-TORCH",
+      "name": "torch",
+      "downloadLocation": "https://pypi.org/project/torch/",
+      "packageUrl": "pkg:pypi/torch"
+    },
+    {
+      "type": "LicenseExpression",
+      "spdxId": "SPDXRef-LIC-MODEL-DECLARED",
+      "licenseExpression": "Apache-2.0"
+    },
+    {
+      "type": "LicenseExpression",
+      "spdxId": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "licenseExpression": "Apache-2.0"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DESCRIBES",
+      "from": "SPDXRef-DOCUMENT",
+      "to": "SPDXRef-MODEL",
+      "relationshipType": "describes"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0000",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0000",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0001",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0001",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0002",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0002",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0003",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0003",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-DIFFUSERS",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-DIFFUSERS",
+      "relationshipType": "dependsOn"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-TORCH",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-TORCH",
+      "relationshipType": "dependsOn"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DECLARED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-DECLARED",
+      "relationshipType": "hasDeclaredLicense"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONCLUDED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "relationshipType": "hasConcludedLicense"
+    }
+  ],
+  "rootElement": [
+    "SPDXRef-MODEL"
+  ],
+  "externalRef": []
+}

@@ -1,4 +1,0 @@
-https://huggingface.co/numind/NuMarkdown-8B-Thinking
-https://huggingface.co/openai/gpt-oss-20b
-https://huggingface.co/zai-org/GLM-4.5
-https://huggingface.co/lightx2v/Qwen-Image-Lightning

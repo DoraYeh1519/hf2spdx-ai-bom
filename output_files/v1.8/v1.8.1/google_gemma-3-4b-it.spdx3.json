@@ -1,0 +1,355 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "type": "SpdxDocument",
+  "spdxId": "SPDXRef-DOCUMENT",
+  "name": "AI-BOM for google/gemma-3-4b-it",
+  "profileConformance": [
+    "core",
+    "software",
+    "simpleLicensing",
+    "ai"
+  ],
+  "dataLicense": {
+    "type": "LicenseExpression",
+    "spdxId": "SPDXRef-DATA-LICENSE",
+    "licenseExpression": "CC0-1.0"
+  },
+  "creationInfo": {
+    "type": "CreationInfo",
+    "created": "2025-08-12T06:00:37Z",
+    "specVersion": "3.0.1",
+    "createdBy": [
+      {
+        "type": "Organization",
+        "spdxId": "SPDXRef-ORG",
+        "name": "Hugging Face Hub Scraper (example)"
+      }
+    ],
+    "createdUsing": [
+      {
+        "type": "Tool",
+        "spdxId": "SPDXRef-TOOL",
+        "name": "hf2spdx-ai-bom",
+        "version": "1.8.1"
+      }
+    ]
+  },
+  "element": [
+    {
+      "type": "AIPackage",
+      "spdxId": "SPDXRef-MODEL",
+      "name": "google/gemma-3-4b-it",
+      "packageVersion": "093f9f388b31de276ce2de164bdc2081324b9767",
+      "downloadLocation": "https://huggingface.co/google/gemma-3-4b-it/tree/093f9f388b31de276ce2de164bdc2081324b9767",
+      "description": "image-text-to-text model on Hugging Face"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0000",
+      "name": ".gitattributes",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/google/gemma-3-4b-it/resolve/093f9f388b31de276ce2de164bdc2081324b9767/.gitattributes"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0001",
+      "name": "README.md",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "eb6df732fd79f239d46a2bbc75302795cf293acd5b75fcc01995344da02aa0bf"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/google/gemma-3-4b-it/resolve/093f9f388b31de276ce2de164bdc2081324b9767/README.md"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0002",
+      "name": "added_tokens.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/google/gemma-3-4b-it/resolve/093f9f388b31de276ce2de164bdc2081324b9767/added_tokens.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0003",
+      "name": "chat_template.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/google/gemma-3-4b-it/resolve/093f9f388b31de276ce2de164bdc2081324b9767/chat_template.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0004",
+      "name": "config.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/google/gemma-3-4b-it/resolve/093f9f388b31de276ce2de164bdc2081324b9767/config.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0005",
+      "name": "generation_config.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/google/gemma-3-4b-it/resolve/093f9f388b31de276ce2de164bdc2081324b9767/generation_config.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0006",
+      "name": "model-00001-of-00002.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/google/gemma-3-4b-it/resolve/093f9f388b31de276ce2de164bdc2081324b9767/model-00001-of-00002.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0007",
+      "name": "model-00002-of-00002.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/google/gemma-3-4b-it/resolve/093f9f388b31de276ce2de164bdc2081324b9767/model-00002-of-00002.safetensors"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0008",
+      "name": "model.safetensors.index.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/google/gemma-3-4b-it/resolve/093f9f388b31de276ce2de164bdc2081324b9767/model.safetensors.index.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0009",
+      "name": "preprocessor_config.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/google/gemma-3-4b-it/resolve/093f9f388b31de276ce2de164bdc2081324b9767/preprocessor_config.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0010",
+      "name": "processor_config.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/google/gemma-3-4b-it/resolve/093f9f388b31de276ce2de164bdc2081324b9767/processor_config.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0011",
+      "name": "special_tokens_map.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/google/gemma-3-4b-it/resolve/093f9f388b31de276ce2de164bdc2081324b9767/special_tokens_map.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0012",
+      "name": "tokenizer.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/google/gemma-3-4b-it/resolve/093f9f388b31de276ce2de164bdc2081324b9767/tokenizer.json"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0013",
+      "name": "tokenizer.model",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/google/gemma-3-4b-it/resolve/093f9f388b31de276ce2de164bdc2081324b9767/tokenizer.model"
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0014",
+      "name": "tokenizer_config.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/google/gemma-3-4b-it/resolve/093f9f388b31de276ce2de164bdc2081324b9767/tokenizer_config.json"
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-ACCELERATE",
+      "name": "accelerate",
+      "downloadLocation": "https://pypi.org/project/accelerate/",
+      "packageUrl": "pkg:pypi/accelerate"
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-TORCH",
+      "name": "torch",
+      "downloadLocation": "https://pypi.org/project/torch/",
+      "packageUrl": "pkg:pypi/torch"
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-TRANSFORMERS",
+      "name": "transformers",
+      "downloadLocation": "https://pypi.org/project/transformers/",
+      "packageUrl": "pkg:pypi/transformers"
+    },
+    {
+      "type": "SimpleLicensingText",
+      "spdxId": "SPDXRef-LIC-MODEL-DECLARED",
+      "licenseText": "gemma"
+    },
+    {
+      "type": "SimpleLicensingText",
+      "spdxId": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "licenseText": "gemma"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DESCRIBES",
+      "from": "SPDXRef-DOCUMENT",
+      "to": "SPDXRef-MODEL",
+      "relationshipType": "describes"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0000",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0000",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0001",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0001",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0002",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0002",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0003",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0003",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0004",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0004",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0005",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0005",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0006",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0006",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0007",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0007",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0008",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0008",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0009",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0009",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0010",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0010",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0011",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0011",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0012",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0012",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0013",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0013",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0014",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0014",
+      "relationshipType": "contains"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-ACCELERATE",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-ACCELERATE",
+      "relationshipType": "dependsOn"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-TORCH",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-TORCH",
+      "relationshipType": "dependsOn"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-TRANSFORMERS",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-TRANSFORMERS",
+      "relationshipType": "dependsOn"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DECLARED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-DECLARED",
+      "relationshipType": "hasDeclaredLicense"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONCLUDED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "relationshipType": "hasConcludedLicense"
+    }
+  ],
+  "rootElement": [
+    "SPDXRef-MODEL"
+  ],
+  "externalRef": []
+}
