@@ -1,0 +1,18 @@
+# Default pipeline config for `python src/cli.py run ...`
+# If this file is missing or cannot be parsed by the simple reader,
+# the CLI falls back to built-in defaults.
+
+# Whether to skip each enrichment step
+skip_hf: false
+skip_ailuminate: false
+
+# If true, overwrite the final output file if it exists
+overwrite: false
+
+# Add provenance comment during AILuminate enrichment
+add_comment: false
+
+# Optional: change the output directory
+output_dir: output
+
+
