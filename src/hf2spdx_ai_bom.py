@@ -291,8 +291,29 @@ def sha_from_lfs_meta(f: Dict[str, Any]) -> Optional[str]:
     return None
 
 def normalize_spdx_license(s: Optional[str]) -> Optional[str]:
-    if not s: return None
-    return SPDX_LICENSE_CANON.get(s.strip().lower(), None)
+    """Return canonical SPDX identifier for a given license string.
+
+    The Hugging Face API sometimes returns license names with whitespace,
+    underscores or a trailing "License" suffix (e.g. "Apache 2.0",
+    "MIT License").  The previous implementation simply lower-cased the
+    string and looked it up in ``SPDX_LICENSE_CANON`` which failed for these
+    common variants.  As a result, models using licenses like
+    "Apache License 2.0" were treated as having an unknown license.
+
+    To be more tolerant we normalise the input by:
+    * trimming surrounding whitespace
+    * converting spaces/underscores to dashes
+    * dropping a trailing "license" token
+
+    After normalisation we attempt the lookup again.
+    """
+    if not s:
+        return None
+    t = s.strip().lower()
+    t = t.replace(" ", "-").replace("_", "-")
+    t = re.sub(r"\blicense\b", "", t)
+    t = re.sub(r"-+", "-", t).strip("-")
+    return SPDX_LICENSE_CANON.get(t)
 
 def get_readme_text(model_info: Dict[str, Any], timeout: int = 30) -> str:
     model_id = model_info.get("modelId")
