@@ -2,7 +2,7 @@
 
 本資料夾提供兩個「事實為本」的 SPDX 3.0 AI‑BOM 補強工具，分別從不同來源為既有的 AI‑BOM JSON 檔添加或補齊欄位：
 
-- `spdx_ai_enricher.py`：從 Hugging Face 模型倉庫的 API/README 抽取 AI 欄位，合併回 `AIPackage`。
+- `spdx_hf_enricher.py`：從 Hugging Face 模型倉庫的 API/README 抽取 AI 欄位，合併回 `AIPackage`。
 - `spdx_ailuminate_enricher.py`：從 MLCommons AILuminate v1.0（Bare Models）對照清單比對模型名稱，寫入 `safetyRiskAssessment`（風險等級）。
 
 ### 安裝需求
@@ -26,7 +26,7 @@ pip install requests beautifulsoup4
 
 ---
 
-### 1) spdx_ai_enricher.py（HF 欄位補強）
+### 1) spdx_hf_enricher.py（HF 欄位補強）
 
 作用：
 - 從 Hugging Face API 的 `cardData` 與 README 中，抽取並補齊下列欄位至 `AIPackage`：
@@ -41,7 +41,7 @@ pip install requests beautifulsoup4
 
 指令：
 ```bash
-python plugin/spdx_ai_enricher.py <ai-bom.json> [更多.json ...] \
+python src/enrichers/spdx_hf_enricher.py <ai-bom.json> [更多.json ...] \
   [--timeout 30] [--dry-run] [-o [orig|inplace|overwrite|<filename>]] [--quiet]
 ```
 
@@ -62,13 +62,13 @@ python plugin/spdx_ai_enricher.py <ai-bom.json> [更多.json ...] \
 範例：
 ```bash
 # 預覽（不寫檔）
-python plugin/spdx_ai_enricher.py output_files/v2.0/v2.0.0/meta-llama_Llama-3.3-70B-Instruct.spdx3.json
+python src/enrichers/spdx_hf_enricher.py output/samples/meta-llama_Llama-3.3-70B-Instruct.spdx3.json
 
 # 每檔另存 enriched.<原檔名>
-python plugin/spdx_ai_enricher.py output_files/v2.0/v2.0.0/*.json -o
+python src/enrichers/spdx_hf_enricher.py output/samples/*.json -o
 
 # 就地覆寫
-python plugin/spdx_ai_enricher.py output_files/v2.0/v2.0.0/meta-llama_Llama-3.3-70B-Instruct.spdx3.json -o orig
+python src/enrichers/spdx_hf_enricher.py output/samples/meta-llama_Llama-3.3-70B-Instruct.spdx3.json -o orig
 ```
 
 ---
@@ -84,7 +84,7 @@ python plugin/spdx_ai_enricher.py output_files/v2.0/v2.0.0/meta-llama_Llama-3.3-
 
 指令：
 ```bash
-python plugin/spdx_ailuminate_enricher.py <ai-bom.json> [更多.json ...] \
+python src/enrichers/spdx_ailuminate_enricher.py <ai-bom.json> [更多.json ...] \
   [--timeout 30] [--dry-run] [-o [orig|inplace|overwrite|<filename>]] \
   [--force] [--add-comment]
 ```
@@ -102,10 +102,10 @@ python plugin/spdx_ailuminate_enricher.py <ai-bom.json> [更多.json ...] \
 範例：
 ```bash
 # 預覽（不寫檔）
-python plugin/spdx_ailuminate_enricher.py output_files/v2.0/v2.0.0/meta-llama_Llama-3.3-70B-Instruct.spdx3.json
+python src/enrichers/spdx_ailuminate_enricher.py output/samples/meta-llama_Llama-3.3-70B-Instruct.spdx3.json
 
 # 就地覆寫並加註來源
-python plugin/spdx_ailuminate_enricher.py output_files/v2.0/v2.0.0/*.json -o orig --add-comment
+python src/enrichers/spdx_ailuminate_enricher.py output/samples/*.json -o orig --add-comment
 ```
 
 

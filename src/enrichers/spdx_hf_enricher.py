@@ -526,7 +526,7 @@ def process_file(path: str, timeout: int=30, dry_run: bool=False, verbose: bool=
                 print(f"[{display_name}] updated fields: {', '.join(changed)}")
             else:
                 if changed:
-                    print(f"[{display_name}] wrote enriched_risk output to '{target_path}' (updated fields: {', '.join(changed)})")
+                    print(f"[{display_name}] wrote enriched output to '{target_path}' (updated fields: {', '.join(changed)})")
                 else:
                     print(f"[{display_name}] wrote output to '{target_path}' (no changes)")
     except Exception as e:
@@ -544,9 +544,9 @@ def main():
     ap.add_argument("--quiet", action="store_true", help="Less verbose output")
     # -o/--output behavior:
     #   -o orig|inplace|overwrite  -> overwrite each input file in place
-    #   -o (no value)              -> per-input output 'enriched_risk.<basename>' alongside input
+    #   -o (no value)              -> per-input output 'enriched.<basename>' alongside input
     #   -o <filename>              -> write to <filename> (only valid with single input)
-    ap.add_argument("-o", "--output", nargs="?", const="__DEFAULT__", help="Output target. Use 'orig'/'inplace'/'overwrite' to modify input files in place; provide no value to write per-input as 'enriched_risk.<basename>'; or provide a filename (only with a single input).")
+    ap.add_argument("-o", "--output", nargs="?", const="__DEFAULT__", help="Output target. Use 'orig'/'inplace'/'overwrite' to modify input files in place; provide no value to write per-input as 'enriched.<basename>'; or provide a filename (only with a single input).")
     args = ap.parse_args()
 
     # Determine effective dry_run
@@ -571,9 +571,9 @@ def main():
         write_path: Optional[str] = None
         if using_output:
             if args.output == "__DEFAULT__":
-                # per-input: enriched_risk.<basename>
+                # per-input: enriched.<basename>
                 base = os.path.basename(p)
-                write_path = os.path.join(os.path.dirname(p), f"enriched_risk.{base}")
+                write_path = os.path.join(os.path.dirname(p), f"enriched.{base}")
             elif str(args.output).lower() in {"orig","inplace","overwrite"}:
                 write_path = p  # in place
             else:
@@ -607,3 +607,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+

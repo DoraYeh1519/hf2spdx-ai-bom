@@ -28,10 +28,10 @@ pip install requests beautifulsoup4
 ```
 
 ### 使用方式（v2.0.0）
-- 主腳本：`hf2spdx-ai-bom_v2.0.0.py`
+- 主腳本：`src/hf2spdx_ai_bom.py`
 
 ```bash
-python hf2spdx-ai-bom_v2.0.0.py <repo_id_or_url> \
+python src/hf2spdx_ai_bom.py <repo_id_or_url> \
   [-o out.json] \
   [--force-dataset] \
   [--dataset-details] \
@@ -40,7 +40,7 @@ python hf2spdx-ai-bom_v2.0.0.py <repo_id_or_url> \
 
 - 參數說明：
   - `repo_id_or_url`：例如 `openai-community/gpt2` 或 `https://huggingface.co/openai-community/gpt2`
-  - `-o/--output`：輸出檔名。若不帶檔名，預設為 `<repo_id>.spdx3.json`；未加 `-o` 時輸出到 stdout。
+- `-o/--output`：輸出檔名。若不帶檔名，預設為 `<repo_id>.spdx3.json`；未加 `-o` 時輸出到 stdout。
   - `--force-dataset`：即使 API 無 `cardData.datasets`，也加入占位 `DatasetPackage` 與 `trainedOn`。
   - `--dataset-details`：在有 Dataset 時加入簡單 `datasetType`（由 `pipeline_tag` 映射）。
   - `--timeout`：HTTP 逾時秒數（預設 30）。
@@ -48,13 +48,31 @@ python hf2spdx-ai-bom_v2.0.0.py <repo_id_or_url> \
 #### 範例
 ```bash
 # 以 repo_id 產生 AI-BOM 並輸出到檔案
-python hf2spdx-ai-bom_v2.0.0.py openai-community/gpt2 -o gpt2.spdx3.json
+python src/hf2spdx_ai_bom.py openai-community/gpt2 -o output/samples/gpt2.spdx3.json
 
 # 強制加入 Dataset，占位輸出
-python hf2spdx-ai-bom_v2.0.0.py meta-llama/Llama-3.1-8B -o llama.spdx3.json --force-dataset
+python src/hf2spdx_ai_bom.py meta-llama/Llama-3.1-8B -o output/samples/llama.spdx3.json --force-dataset
 
 # 加入 Dataset 細節（datasetType）
-python hf2spdx-ai-bom_v2.0.0.py openai-community/gpt2 -o gpt2.spdx3.json --dataset-details
+python src/hf2spdx_ai_bom.py openai-community/gpt2 -o output/samples/gpt2.spdx3.json --dataset-details
+```
+
+### Enrichers（補強工具）
+- 位置：`src/enrichers/`
+- 預設為 dry‑run；加 `-o` 才會寫檔。`-o` 三態：
+  - `-o`（無值）：另存為 `enriched.<原檔名>`
+  - `-o orig|inplace|overwrite`：就地覆寫原檔
+  - `-o <檔名>`：單一輸入時輸出到指定檔名
+
+1) HF 欄位補強：`spdx_hf_enricher.py`
+```bash
+python src/enrichers/spdx_hf_enricher.py output/samples/*.json -o
+python src/enrichers/spdx_hf_enricher.py output/samples/meta-llama_Llama-3.3-70B-Instruct.spdx3.json -o orig
+```
+
+2) AILuminate 風險補強：`spdx_ailuminate_enricher.py`
+```bash
+python src/enrichers/spdx_ailuminate_enricher.py output/samples/*.json -o orig --add-comment
 ```
 
 ### 主要輸出（SPDX 3.0 JSON-LD）

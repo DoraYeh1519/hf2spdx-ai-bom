@@ -283,8 +283,8 @@ def main():
     ap.add_argument("--timeout", type=int, default=30, help="HTTP timeout in seconds")
     # Default dry-run unless -o/--output is provided
     ap.add_argument("--dry-run", action="store_true", default=None, help="Do not write changes; only print decisions (default unless -o/--output is provided).")
-    # Output behavior: default (no value) differs from HF enricher -> enrichedRisk.<basename>
-    ap.add_argument("-o", "--output", nargs="?", const="__DEFAULT__", help="Output target. Use 'orig'/'inplace'/'overwrite' to modify input files in place; provide no value to write per-input as 'enrichedRisk.<basename>'; or provide a filename (only with a single input).")
+    # Output behavior unified with HF enricher
+    ap.add_argument("-o", "--output", nargs="?", const="__DEFAULT__", help="Output target. Use 'orig'/'inplace'/'overwrite' to modify input files in place; provide no value to write per-input as 'enriched.<basename>'; or provide a filename (only with a single input).")
     args = ap.parse_args()
 
     using_output = args.output is not None
@@ -307,7 +307,7 @@ def main():
         if using_output:
             if args.output == "__DEFAULT__":
                 base = os.path.basename(p)
-                write_path = os.path.join(os.path.dirname(p), f"enrichedRisk.{base}")
+                write_path = os.path.join(os.path.dirname(p), f"enriched.{base}")
             elif str(args.output).lower() in {"orig","inplace","overwrite"}:
                 write_path = p
             else:
@@ -340,3 +340,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
