@@ -40,7 +40,8 @@ def _elem_creation_info() -> dict:
     }
 
 def _get_release_time(model_info: Dict[str, Any], fallback_created: str) -> str:
-    for k in ("lastModified", "createdAt"):
+    # Prefer model creation time from HF API; fall back to lastModified; else document creation
+    for k in ("createdAt", "lastModified"):
         v = model_info.get(k)
         if isinstance(v, str) and len(v) >= 10:
             return v
@@ -491,6 +492,14 @@ def get_requirements_from_repo(repo_id: str, model_info: Dict[str, Any], timeout
     return found
 
 # -------------- SPDX assembly --------------
+ALWAYS_DEP_IF_FILES = {
+    'tokenizer.json': 'tokenizers',
+    'tokenizer_config.json': 'tokenizers',
+    'merges.txt': 'tokenizers',
+    'vocab.json': 'tokenizers',
+    'config.json': 'transformers'
+}
+
 def build_spdx(repo_id: str,
                model_info: Dict[str, Any],
                license_raw: Optional[str],
@@ -599,6 +608,14 @@ def build_spdx(repo_id: str,
     deps |= extract_pkgs_from_readme(readme_text)
     deps |= get_deps_from_repo_python_files(repo_id, model_info, timeout=timeout)
     if deps:
+        
+        # add implicit deps based on present files
+        for f in files:
+            name = f.get('name')
+            pkg = ALWAYS_DEP_IF_FILES.get(name)
+            if pkg:
+                deps.add(pkg)
+
         # final defensive sanitization to avoid file names/flags slipping in
         def _dep_ok(n: str) -> bool:
             bad_exts = ('.txt','.in','.cfg','.ini','.yml','.yaml','.json','.lock','.toml')

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# pyright: reportMissingImports=false
 import argparse
 import json
 import os
@@ -154,6 +155,56 @@ def _normalize_hparams_list(value: Any) -> List[Dict[str, Any]]:
                 out.append({"name": str(name), "value": item.get("value")})
     return out
 
+
+def _fetch_repo_file_json(repo_id: str, commit: Optional[str], filename: str, timeout: int=30) -> Optional[Dict[str, Any]]:
+    """Fetch and parse a JSON file from the HF repo at a pinned commit."""
+    try:
+        ref = commit or "main"
+        url = f"{HF_BASE}/{repo_id}/resolve/{ref}/{filename}"
+        r = requests.get(url, timeout=timeout)
+        if r.status_code == 200 and r.text:
+            return json.loads(r.text)
+    except Exception:
+        return None
+    return None
+
+def extract_from_config_json(cfg: Dict[str, Any]) -> Dict[str, Any]:
+    """Extract canonical model-structure hyperparameters from config.json.
+
+
+    Maps common GPT/Transformer keys to normalized names used in SPDX AI-BOM:
+      n_embd -> hidden_size
+      n_layer -> num_layers
+      n_head -> num_attention_heads
+      n_positions / n_ctx / max_position_embeddings -> context_window
+    """
+    if not isinstance(cfg, dict):
+        return {}
+    # Attempt key resolution with fallbacks
+    def _pick(*keys, default=None):
+        for k in keys:
+            if k in cfg and cfg[k] is not None:
+                return cfg[k]
+        return default
+
+    hidden_size = _pick("n_embd", "hidden_size")
+    num_layers = _pick("n_layer", "num_hidden_layers")
+    num_heads = _pick("n_head", "num_attention_heads")
+    ctx = _pick("n_positions", "n_ctx", "max_position_embeddings", "n_positions_max")
+
+    hp = []
+    if hidden_size is not None:
+        hp.append({"name": "hidden_size", "value": hidden_size})
+    if num_layers is not None:
+        hp.append({"name": "num_layers", "value": num_layers})
+    if num_heads is not None:
+        hp.append({"name": "num_attention_heads", "value": num_heads})
+    if ctx is not None:
+        hp.append({"name": "context_window", "value": ctx})
+
+    return {"hyperparameter": hp} if hp else {}
+
+
 def _merge_hyperparameters(existing: Any, incoming: Any) -> List[Dict[str, Any]]:
     ex_list = _normalize_hparams_list(existing)
     in_list = _normalize_hparams_list(incoming)
@@ -176,6 +227,83 @@ def _merge_hyperparameters(existing: Any, incoming: Any) -> List[Dict[str, Any]]
         # overwrite with new value when incoming provides it
         name_to_value[n] = item.get("value")
     return [{"name": n, "value": name_to_value.get(n)} for n in order]
+
+
+ALLOWED_HP_NAMES = {
+    "hidden_size","num_layers","num_attention_heads","context_window",
+    "batch_size","optimizer","initial_learning_rate","total_parameters"
+}
+HP_ALIAS = {
+    "n_embd":"hidden_size", "hidden-size":"hidden_size", "hidden_dim":"hidden_size", "embed_dim":"hidden_size",
+    "n_layer":"num_layers", "layers":"num_layers", "num_hidden_layers":"num_layers",
+    "n_head":"num_attention_heads", "attention_heads":"num_attention_heads", "num_attention_heads":"num_attention_heads",
+    "n_positions":"context_window", "n_ctx":"context_window", "max_position_embeddings":"context_window",
+    "learning_rate":"initial_learning_rate", "lr":"initial_learning_rate",
+    "batchsize":"batch_size", "bs":"batch_size",
+}
+HP_DROP = {"language","tags","disclaimer","note","notes"}
+
+def _normalize_hp_name(name: str) -> str:
+    k = (name or "").strip().lower()
+    k = re.sub(r"[^a-z0-9_]+", "_", k)
+    if k in HP_ALIAS:
+        k = HP_ALIAS[k]
+    return k
+
+def _maybe_num(v):
+    if isinstance(v, (int,float)): return v
+    s = str(v).strip()
+    # handle things like "512", "0.00025", "1e-4"
+    try:
+        if re.fullmatch(r"[+-]?\d+", s):
+            return int(s)
+        return float(s)
+    except Exception:
+        return v
+
+def _sanitize_hparams_list(items):
+    out = []
+    for it in (items or []):
+        n = it.get("name")
+        v = it.get("value")
+        if not isinstance(n, str):
+            continue
+        norm = _normalize_hp_name(n)
+        if norm in HP_DROP:
+            continue
+        if norm not in ALLOWED_HP_NAMES:
+            # skip unknown names; we keep the set tight as requested
+            continue
+        out.append({"name": norm, "value": _maybe_num(v)})
+    # de-dup on name (keep last value)
+    seen = {}
+    order = []
+    for it in out:
+        n = it["name"]
+        if n not in seen:
+            order.append(n)
+        seen[n] = it["value"]
+    return [{"name": n, "value": seen[n]} for n in order]
+
+def extract_training_from_readme_for_hparams(text: str):
+    hp = []
+    # batch size
+    for m in re.finditer(r"(?i)\b(batch\s*size|bs)\s*[:=]\s*([0-9]{1,6})", text):
+        hp.append({"name":"batch_size","value": int(m.group(2))})
+        break
+    # optimizer
+    m = re.search(r"(?i)\boptimizer\s*[:=]\s*([A-Za-z0-9_.-]{2,})", text)
+    if m:
+        hp.append({"name":"optimizer","value": m.group(1)})
+    # learning rate
+    m = re.search(r"(?i)\b(learning\s*rate|lr)\s*[:=]\s*([0-9.eE+-]{1,12})", text)
+    if m:
+        try:
+            hp.append({"name":"initial_learning_rate","value": float(m.group(2))})
+        except Exception:
+            pass
+    return hp
+
 
 def _metric_signature(m: Dict[str, Any]) -> Tuple:
     return (
@@ -473,11 +601,38 @@ def process_file(path: str, timeout: int=30, dry_run: bool=False, verbose: bool=
     add_card = extract_from_carddata(card)
     readme = _get_readme_text(repo_id, commit, timeout=timeout)
     add_readme = extract_from_readme(readme) if readme else {}
+    # Also mine README for training hparams (batch_size/optimizer/lr)
+    try:
+        extra_hp = extract_training_from_readme_for_hparams(readme or '')
+        if extra_hp:
+            add_readme = dict(add_readme or {})
+            cur = add_readme.get('hyperparameter') or []
+            add_readme['hyperparameter'] = (cur + extra_hp)
+    except Exception:
+        pass
+    # Also try to fetch config.json for canonical architecture hyperparameters
+    add_cfg = {}
+    try:
+        cfg = _fetch_repo_file_json(repo_id, commit, "config.json", timeout=timeout)
+        if cfg:
+            add_cfg = extract_from_config_json(cfg)
+    except Exception:
+        add_cfg = {}
+
 
     # Merge preference: cardData > README
     merged = dict(add_readme)
     merged.update(add_card)
+    # merge config-derived hyperparameters on top (overwrite/complete anything from README/card)
+    if add_cfg.get("hyperparameter"):
+        merged["hyperparameter"] = _merge_hyperparameters(merged.get("hyperparameter"), add_cfg.get("hyperparameter"))
 
+
+    
+    # sanitize final hyperparameters
+    if 'hyperparameter' in merged:
+        merged['hyperparameter'] = _sanitize_hparams_list(_normalize_hparams_list(merged.get('hyperparameter')))
+    
     if verbose:
         display_name = repo_id or os.path.basename(path)
         # Report not found per field
@@ -607,5 +762,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
 
 
