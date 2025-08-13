@@ -1,0 +1,1369 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "type": "SpdxDocument",
+  "spdxId": "SPDXRef-DOCUMENT",
+  "name": "AI-BOM for openai/whisper-large-v3",
+  "profileConformance": [
+    "core",
+    "software",
+    "simpleLicensing",
+    "ai"
+  ],
+  "dataLicense": {
+    "type": "LicenseExpression",
+    "spdxId": "SPDXRef-DATA-LICENSE",
+    "licenseExpression": "CC0-1.0"
+  },
+  "creationInfo": {
+    "type": "CreationInfo",
+    "created": "2025-08-12T07:25:10Z",
+    "specVersion": "3.0.1",
+    "createdBy": [
+      {
+        "type": "Tool",
+        "spdxId": "SPDXRef-TOOL",
+        "name": "hf2spdx-ai-bom",
+        "version": "2.0.0"
+      }
+    ],
+    "createdUsing": [
+      {
+        "type": "Tool",
+        "spdxId": "SPDXRef-TOOL",
+        "name": "hf2spdx-ai-bom",
+        "version": "2.0.0"
+      }
+    ]
+  },
+  "element": [
+    {
+      "type": "AIPackage",
+      "spdxId": "SPDXRef-MODEL",
+      "name": "openai/whisper-large-v3",
+      "packageVersion": "06f233fe06e710322aca913c1bc4249a0d71fce1",
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/tree/06f233fe06e710322aca913c1bc4249a0d71fce1",
+      "primaryPurpose": "model",
+      "releaseTime": "2024-08-12T10:20:10.000Z",
+      "suppliedBy": [
+        {
+          "type": "Organization",
+          "spdxId": "SPDXRef-SUPPLIER",
+          "name": "openai"
+        }
+      ],
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      },
+      "description": "automatic-speech-recognition model on Hugging Face"
+    },
+    {
+      "type": "Organization",
+      "spdxId": "SPDXRef-SUPPLIER",
+      "name": "openai",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0000",
+      "name": ".gitattributes",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/.gitattributes",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0001",
+      "name": "README.md",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "b05416eb578e9fc65ce137f3401bafdf3bc2feac7448e7dd180dcd367b8cfb52"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/README.md",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0002",
+      "name": "added_tokens.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "3c51f66c4c21f9e126970078f11ae77a78c74aee8df606ee9daba86e467108e0"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/added_tokens.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0003",
+      "name": "config.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "ad0e8d1e46f4d01f7861a21509e5d0f977d6cc1f367a370603c92541d819807b"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/config.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0004",
+      "name": "flax_model.msgpack",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/flax_model.msgpack",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0005",
+      "name": "generation_config.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "fbdfa70135de9b1d31553393f14e80aaeb1936ea36576b2ba864055943c09d23"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/generation_config.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0006",
+      "name": "merges.txt",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "2df2990a395e35e8dfbc7511e08c12d56018d8d04691e0133e5d63b21e154dc6"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/merges.txt",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0007",
+      "name": "model.fp32-00001-of-00002.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "08e0005225b3dbaf55dd13ac62926cc7e02c1025d66fa375e6fb305ff79cd4f9"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/model.fp32-00001-of-00002.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0008",
+      "name": "model.fp32-00002-of-00002.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "630ca774672856d2e0e39a702e590f635a1cfc5726a64b6578ab46dd367369a9"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/model.fp32-00002-of-00002.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0009",
+      "name": "model.safetensors",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "a8e94b85976e5864ba3e9525c7e6c83b2a1eca42d4b797a0c7c24d778e40fd95"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/model.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0010",
+      "name": "model.safetensors.index.fp32.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "bccecde4044933c7f3cbea731a5a4eb1e2dcbef1b9bc5f603d510b8361c45835"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/model.safetensors.index.fp32.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0011",
+      "name": "normalizer.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "bf1c507dc8724ca9cf9903640dacfb69dae2f00edee4f21ceba106a7392f26dd"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/normalizer.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0012",
+      "name": "preprocessor_config.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/preprocessor_config.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0013",
+      "name": "pytorch_model.bin",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "8f3dd0108a56caf505b47740a385a6f61be03e670f4fc34e21e3d2bc98d7b6d1"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/pytorch_model.bin",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0014",
+      "name": "pytorch_model.bin.index.fp32.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "321c26ca640af6ad1f00a0cb3a53cb47265a41e66399ae713d7dbbf0cd923b69"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/pytorch_model.bin.index.fp32.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0015",
+      "name": "pytorch_model.fp32-00001-of-00002.bin",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "fed9e023b3519cba5b7279bdfbfd81aacfeb001f04bbe0cd9b8d1995a900b0d8"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/pytorch_model.fp32-00001-of-00002.bin",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0016",
+      "name": "pytorch_model.fp32-00002-of-00002.bin",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "aadd3bdfecf9bc81e6ef6acf3c1ccaf3124c82eb06a94190064a28fdee096d64"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/pytorch_model.fp32-00002-of-00002.bin",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0017",
+      "name": "special_tokens_map.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "1c70773c078cb2ca96e0fcff113102f1d3e2b1504272c3bb63b035d4a6700d87"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/special_tokens_map.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0018",
+      "name": "tokenizer.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "6d8cbd7cd0d8d5815e478dac67b85a26bbe77c1f5e0c6d76d1ce2abc0e5f21ca"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/tokenizer.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0019",
+      "name": "tokenizer_config.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "844b642c73a91359722f47b35705f7174686df33d252695d8572cf9ac03a6389"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/tokenizer_config.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0020",
+      "name": "vocab.json",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "e2aa043ef015641d363d8288e7c241c85e36a5c761fb303598e0710233344387"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/openai/whisper-large-v3/resolve/06f233fe06e710322aca913c1bc4249a0d71fce1/vocab.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-ACCELERATE",
+      "name": "accelerate",
+      "downloadLocation": "https://pypi.org/project/accelerate/",
+      "packageUrl": "pkg:pypi/accelerate",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-DATASETS",
+      "name": "datasets",
+      "downloadLocation": "https://pypi.org/project/datasets/",
+      "packageUrl": "pkg:pypi/datasets",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-FLASH-ATTN",
+      "name": "flash-attn",
+      "downloadLocation": "https://pypi.org/project/flash-attn/",
+      "packageUrl": "pkg:pypi/flash-attn",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-TORCH",
+      "name": "torch",
+      "downloadLocation": "https://pypi.org/project/torch/",
+      "packageUrl": "pkg:pypi/torch",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-TRANSFORMERS",
+      "name": "transformers",
+      "downloadLocation": "https://pypi.org/project/transformers/",
+      "packageUrl": "pkg:pypi/transformers",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "LicenseExpression",
+      "spdxId": "SPDXRef-LIC-MODEL-DECLARED",
+      "licenseExpression": "Apache-2.0",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "LicenseExpression",
+      "spdxId": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "licenseExpression": "Apache-2.0",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DESCRIBES",
+      "from": "SPDXRef-DOCUMENT",
+      "to": "SPDXRef-MODEL",
+      "relationshipType": "describes",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0000",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0000",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0001",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0001",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0002",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0002",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0003",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0003",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0004",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0004",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0005",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0005",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0006",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0006",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0007",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0007",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0008",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0008",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0009",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0009",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0010",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0010",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0011",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0011",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0012",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0012",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0013",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0013",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0014",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0014",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0015",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0015",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0016",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0016",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0017",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0017",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0018",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0018",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0019",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0019",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0020",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0020",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-ACCELERATE",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-ACCELERATE",
+      "relationshipType": "dependsOn",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-DATASETS",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-DATASETS",
+      "relationshipType": "dependsOn",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-FLASH-ATTN",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-FLASH-ATTN",
+      "relationshipType": "dependsOn",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-TORCH",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-TORCH",
+      "relationshipType": "dependsOn",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-TRANSFORMERS",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-TRANSFORMERS",
+      "relationshipType": "dependsOn",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DECLARED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-DECLARED",
+      "relationshipType": "hasDeclaredLicense",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONCLUDED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "relationshipType": "hasConcludedLicense",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:25:10Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    }
+  ],
+  "rootElement": [
+    "SPDXRef-MODEL"
+  ],
+  "externalRef": [
+    {
+      "type": "ExternalRef",
+      "externalRefType": "arXiv",
+      "locator": "2212.04356"
+    }
+  ]
+}

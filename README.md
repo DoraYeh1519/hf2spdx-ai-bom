@@ -27,11 +27,11 @@
 pip install requests beautifulsoup4
 ```
 
-### 使用方式（v1.8.2）
-- 主腳本：`hf2spdx-ai-bom_v1.8.2.py`
+### 使用方式（v2.0.0）
+- 主腳本：`hf2spdx-ai-bom_v2.0.0.py`
 
 ```bash
-python hf2spdx-ai-bom_v1.8.2.py <repo_id_or_url> \
+python hf2spdx-ai-bom_v2.0.0.py <repo_id_or_url> \
   [-o out.json] \
   [--force-dataset] \
   [--dataset-details] \
@@ -48,13 +48,13 @@ python hf2spdx-ai-bom_v1.8.2.py <repo_id_or_url> \
 #### 範例
 ```bash
 # 以 repo_id 產生 AI-BOM 並輸出到檔案
-python hf2spdx-ai-bom_v1.8.2.py openai-community/gpt2 -o gpt2.spdx3.json
+python hf2spdx-ai-bom_v2.0.0.py openai-community/gpt2 -o gpt2.spdx3.json
 
 # 強制加入 Dataset，占位輸出
-python hf2spdx-ai-bom_v1.8.2.py meta-llama/Llama-3.1-8B -o llama.spdx3.json --force-dataset
+python hf2spdx-ai-bom_v2.0.0.py meta-llama/Llama-3.1-8B -o llama.spdx3.json --force-dataset
 
 # 加入 Dataset 細節（datasetType）
-python hf2spdx-ai-bom_v1.8.2.py openai-community/gpt2 -o gpt2.spdx3.json --dataset-details
+python hf2spdx-ai-bom_v2.0.0.py openai-community/gpt2 -o gpt2.spdx3.json --dataset-details
 ```
 
 ### 主要輸出（SPDX 3.0 JSON-LD）
@@ -83,6 +83,8 @@ python hf2spdx-ai-bom_v1.8.2.py openai-community/gpt2 -o gpt2.spdx3.json --datas
   - 新增 README 後備解析 DOI/arXiv；強化 License 偵測。
 - v1.8.x：
   - 忽略安裝指令中的需求/限制檔名；v1.8.2 加入小型 `.py` 掃描與相依名單防守式清理。
+ - v2.0.0：
+   - 元素與關聯全面附帶 `creationInfo`；`AIPackage` 新增 `primaryPurpose`、`releaseTime`（取自 API `lastModified/createdAt`，否則回退文件建立時間）、`suppliedBy`（由 repo 擁有者推得之 `Organization`），並將供應者同步列為元素。
 
 ### 注意事項
 - 請遵守 Hugging Face 之服務條款與各模型原作者授權條款。

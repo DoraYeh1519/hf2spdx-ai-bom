@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-hf2spdx-ai-bom_v1.8.2.py 的自動測試腳本
+hf2spdx-ai-bom_v2.0.0.py 的自動測試腳本
 從 test.txt 檔案中的 URL 測試腳本
 """
 
@@ -22,7 +22,7 @@ def read_test_urls(filename="test.txt"):
         print(f"讀取 {filename} 時發生錯誤：{e}")
         return []
 
-def test_hf2spdx_script(url, script_path="hf2spdx-ai-bom_v1.8.2.py", output_dir="./output_files/v1.8.2"):
+def test_hf2spdx_script(url, script_path="hf2spdx-ai-bom_v2.0.0.py", output_dir="./output_files/v2.0/v2.0.0"):
     """使用單一 URL 測試 hf2spdx 腳本"""
     try:
         print(f"\n{'='*60}")
@@ -68,11 +68,11 @@ def test_hf2spdx_script(url, script_path="hf2spdx-ai-bom_v1.8.2.py", output_dir=
 
 def main():
     """執行自動測試的主函數"""
-    print("hf2spdx-ai-bom_v1.8.2.py 自動測試")
+    print("hf2spdx-ai-bom_v2.0.0.py 自動測試")
     print("=" * 50)
     
     # 檢查主腳本是否存在
-    script_path = "hf2spdx-ai-bom_v1.8.2.py"
+    script_path = "hf2spdx-ai-bom_v2.0.0.py"
     if not os.path.exists(script_path):
         print(f"錯誤：在當前目錄中找不到 {script_path}")
         return

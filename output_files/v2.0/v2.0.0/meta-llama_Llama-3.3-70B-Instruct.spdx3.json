@@ -1,0 +1,2460 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "type": "SpdxDocument",
+  "spdxId": "SPDXRef-DOCUMENT",
+  "name": "AI-BOM for meta-llama/Llama-3.3-70B-Instruct",
+  "profileConformance": [
+    "core",
+    "software",
+    "simpleLicensing",
+    "ai"
+  ],
+  "dataLicense": {
+    "type": "LicenseExpression",
+    "spdxId": "SPDXRef-DATA-LICENSE",
+    "licenseExpression": "CC0-1.0"
+  },
+  "creationInfo": {
+    "type": "CreationInfo",
+    "created": "2025-08-12T07:26:03Z",
+    "specVersion": "3.0.1",
+    "createdBy": [
+      {
+        "type": "Tool",
+        "spdxId": "SPDXRef-TOOL",
+        "name": "hf2spdx-ai-bom",
+        "version": "2.0.0"
+      }
+    ],
+    "createdUsing": [
+      {
+        "type": "Tool",
+        "spdxId": "SPDXRef-TOOL",
+        "name": "hf2spdx-ai-bom",
+        "version": "2.0.0"
+      }
+    ]
+  },
+  "element": [
+    {
+      "type": "AIPackage",
+      "spdxId": "SPDXRef-MODEL",
+      "name": "meta-llama/Llama-3.3-70B-Instruct",
+      "packageVersion": "6f6073b423013f6a7d4d9f39144961bfbfbc386b",
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/tree/6f6073b423013f6a7d4d9f39144961bfbfbc386b",
+      "primaryPurpose": "model",
+      "releaseTime": "2024-12-21T18:28:01.000Z",
+      "suppliedBy": [
+        {
+          "type": "Organization",
+          "spdxId": "SPDXRef-SUPPLIER",
+          "name": "meta-llama"
+        }
+      ],
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      },
+      "description": "text-generation model on Hugging Face",
+      "safetyRiskAssessment": "high"
+    },
+    {
+      "type": "Organization",
+      "spdxId": "SPDXRef-SUPPLIER",
+      "name": "meta-llama",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0000",
+      "name": ".gitattributes",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/.gitattributes",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0001",
+      "name": "LICENSE",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "fb58d9a630ccc1dc0d08f8c00232de56bc73309020f59c8181d0c12ef28d9f8c"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/LICENSE",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0002",
+      "name": "README.md",
+      "fileKind": "file",
+      "hash": [
+        {
+          "type": "Hash",
+          "algorithm": "SHA256",
+          "hashValue": "83bfcf4ac40ab3f4d30577e669599e94955b26d6926861410e75e43a07772dad"
+        }
+      ],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/README.md",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0003",
+      "name": "USE_POLICY.md",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/USE_POLICY.md",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0004",
+      "name": "config.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/config.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0005",
+      "name": "generation_config.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/generation_config.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0006",
+      "name": "model-00001-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00001-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0007",
+      "name": "model-00002-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00002-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0008",
+      "name": "model-00003-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00003-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0009",
+      "name": "model-00004-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00004-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0010",
+      "name": "model-00005-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00005-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0011",
+      "name": "model-00006-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00006-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0012",
+      "name": "model-00007-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00007-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0013",
+      "name": "model-00008-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00008-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0014",
+      "name": "model-00009-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00009-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0015",
+      "name": "model-00010-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00010-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0016",
+      "name": "model-00011-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00011-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0017",
+      "name": "model-00012-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00012-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0018",
+      "name": "model-00013-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00013-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0019",
+      "name": "model-00014-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00014-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0020",
+      "name": "model-00015-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00015-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0021",
+      "name": "model-00016-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00016-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0022",
+      "name": "model-00017-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00017-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0023",
+      "name": "model-00018-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00018-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0024",
+      "name": "model-00019-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00019-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0025",
+      "name": "model-00020-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00020-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0026",
+      "name": "model-00021-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00021-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0027",
+      "name": "model-00022-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00022-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0028",
+      "name": "model-00023-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00023-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0029",
+      "name": "model-00024-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00024-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0030",
+      "name": "model-00025-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00025-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0031",
+      "name": "model-00026-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00026-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0032",
+      "name": "model-00027-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00027-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0033",
+      "name": "model-00028-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00028-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0034",
+      "name": "model-00029-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00029-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0035",
+      "name": "model-00030-of-00030.safetensors",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model-00030-of-00030.safetensors",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0036",
+      "name": "model.safetensors.index.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/model.safetensors.index.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0037",
+      "name": "original/.gitattributes",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/original/.gitattributes",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0038",
+      "name": "original/README.md",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/original/README.md",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0039",
+      "name": "original/checklist.chk",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/original/checklist.chk",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0040",
+      "name": "original/consolidated.00.pth",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/original/consolidated.00.pth",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0041",
+      "name": "original/consolidated.01.pth",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/original/consolidated.01.pth",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0042",
+      "name": "original/consolidated.02.pth",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/original/consolidated.02.pth",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0043",
+      "name": "original/consolidated.03.pth",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/original/consolidated.03.pth",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0044",
+      "name": "original/consolidated.04.pth",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/original/consolidated.04.pth",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0045",
+      "name": "original/consolidated.05.pth",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/original/consolidated.05.pth",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0046",
+      "name": "original/consolidated.06.pth",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/original/consolidated.06.pth",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0047",
+      "name": "original/consolidated.07.pth",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/original/consolidated.07.pth",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0048",
+      "name": "original/params.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/original/params.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0049",
+      "name": "original/tokenizer.model",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/original/tokenizer.model",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0050",
+      "name": "special_tokens_map.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/special_tokens_map.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0051",
+      "name": "tokenizer.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/tokenizer.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "File",
+      "spdxId": "SPDXRef-FILE-0052",
+      "name": "tokenizer_config.json",
+      "fileKind": "file",
+      "hash": [],
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/tokenizer_config.json",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-TORCH",
+      "name": "torch",
+      "downloadLocation": "https://pypi.org/project/torch/",
+      "packageUrl": "pkg:pypi/torch",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Package",
+      "spdxId": "SPDXRef-PKG-TRANSFORMERS",
+      "name": "transformers",
+      "downloadLocation": "https://pypi.org/project/transformers/",
+      "packageUrl": "pkg:pypi/transformers",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "SimpleLicensingText",
+      "spdxId": "SPDXRef-LIC-MODEL-DECLARED",
+      "licenseText": "**LLAMA 3.3 COMMUNITY LICENSE AGREEMENT**\n\n Llama 3.3 Version Release Date: December 6, 2024\n\n“**Agreement**” means the terms and conditions for use, reproduction, distribution and modification of the Llama Materials set forth herein.\n\n“**Documentation**” means the specifications, manuals and documentation accompanying Llama 3.3 distributed by Meta at [https://www.llama.com/docs/overview](https://llama.com/docs/overview).\n\n“**Licensee**” or “**you**” means you, or your employer or any other person or entity (if you are entering into this Agreement on such person or entity’s behalf), of the age required under applicable laws, rules or regulations to provide legal consent and that has legal authority to bind your employer or such other person or entity if you are entering in this Agreement on their behalf.\n\n“**Llama 3.3**” means the foundational large language models and software and algorithms, including machine-learning model code, trained model weights, inference-enabling code, training-enabling code, fine-tuning enabling code and other elements of the foregoing distributed by Meta at [https://www.llama.com/llama-downloads](https://www.llama.com/llama-downloads).\n\n“**Llama Materials**” means, collectively, Meta’s proprietary Llama 3.3 and Documentation (and any portion thereof) made available under this Agreement.\n\n“**Meta**” or “**we**” means Meta Platforms Ireland Limited (if you are located in or, if you are an entity, your principal place of business is in the EEA or Switzerland) and Meta Platforms, Inc. (if you are located outside of the EEA or Switzerland). \n\nBy clicking “I Accept” below or by using or distributing any portion or element of the Llama Materials, you agree to be bound by this Agreement.\n\n1\\. **License Rights and Redistribution**.\n\na. Grant of Rights. You are granted a non-exclusive, worldwide, non-transferable and royalty-free limited license under Meta’s intellectual property or other rights owned by Meta embodied in the Llama Materials to use, reproduce, distribute, copy, create derivative works of, and make modifications to the Llama Materials.  \n\nb. Redistribution and Use.  \n\ni. If you distribute or make available the Llama Materials (or any derivative works thereof), or a product or service (including another AI model) that contains any of them, you shall (A) provide a copy of this Agreement with any such Llama Materials; and (B) prominently display “Built with Llama” on a related website, user interface, blogpost, about page, or product documentation. If you use the Llama Materials or any outputs or results of the Llama Materials to create, train, fine tune, or otherwise improve an AI model, which is distributed or made available, you shall also include “Llama” at the beginning of any such AI model name.\n\nii. If you receive Llama Materials, or any derivative works thereof, from a Licensee as part of an integrated end user product, then Section 2 of this Agreement will not apply to you. \n\niii. You must retain in all copies of the Llama Materials that you distribute the following attribution notice within a “Notice” text file distributed as a part of such copies: “Llama 3.3 is licensed under the Llama 3.3 Community License, Copyright © Meta Platforms, Inc. All Rights Reserved.”\n\niv. Your use of the Llama Materials must comply with applicable laws and regulations (including trade compliance laws and regulations) and adhere to the Acceptable Use Policy for the Llama Materials (available at [https://www.llama.com/llama3\\_3/use-policy](https://www.llama.com/llama3_3/use-policy)), which is hereby incorporated by reference into this Agreement.  \n    \n2\\. **Additional Commercial Terms**. If, on the Llama 3.3 version release date, the monthly active users of the products or services made available by or for Licensee, or Licensee’s affiliates, is greater than 700 million monthly active users in the preceding calendar month, you must request a license from Meta, which Meta may grant to you in its sole discretion, and you are not authorized to exercise any of the rights under this Agreement unless or until Meta otherwise expressly grants you such rights.\n\n3**. Disclaimer of Warranty**. UNLESS REQUIRED BY APPLICABLE LAW, THE LLAMA MATERIALS AND ANY OUTPUT AND RESULTS THEREFROM ARE PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, AND META DISCLAIMS ALL WARRANTIES OF ANY KIND, BOTH EXPRESS AND IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE. YOU ARE SOLELY RESPONSIBLE FOR DETERMINING THE APPROPRIATENESS OF USING OR REDISTRIBUTING THE LLAMA MATERIALS AND ASSUME ANY RISKS ASSOCIATED WITH YOUR USE OF THE LLAMA MATERIALS AND ANY OUTPUT AND RESULTS.\n\n4\\. **Limitation of Liability**. IN NO EVENT WILL META OR ITS AFFILIATES BE LIABLE UNDER ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, TORT, NEGLIGENCE, PRODUCTS LIABILITY, OR OTHERWISE, ARISING OUT OF THIS AGREEMENT, FOR ANY LOST PROFITS OR ANY INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL, EXEMPLARY OR PUNITIVE DAMAGES, EVEN IF META OR ITS AFFILIATES HAVE BEEN ADVISED OF THE POSSIBILITY OF ANY OF THE FOREGOING.\n\n5\\. **Intellectual Property**.\n\na. No trademark licenses are granted under this Agreement, and in connection with the Llama Materials, neither Meta nor Licensee may use any name or mark owned by or associated with the other or any of its affiliates, except as required for reasonable and customary use in describing and redistributing the Llama Materials or as set forth in this Section 5(a). Meta hereby grants you a license to use “Llama” (the “Mark”) solely as required to comply with the last sentence of Section 1.b.i. You will comply with Meta’s brand guidelines (currently accessible at [https://about.meta.com/brand/resources/meta/company-brand/](https://about.meta.com/brand/resources/meta/company-brand/)[)](https://en.facebookbrand.com/). All goodwill arising out of your use of the Mark will inure to the benefit of Meta.\n\nb. Subject to Meta’s ownership of Llama Materials and derivatives made by or for Meta, with respect to any derivative works and modifications of the Llama Materials that are made by you, as between you and Meta, you are and will be the owner of such derivative works and modifications.\n\nc. If you institute litigation or other proceedings against Meta or any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Llama Materials or Llama 3.3 outputs or results, or any portion of any of the foregoing, constitutes infringement of intellectual property or other rights owned or licensable by you, then any licenses granted to you under this Agreement shall terminate as of the date such litigation or claim is filed or instituted. You will indemnify and hold harmless Meta from and against any claim by any third party arising out of or related to your use or distribution of the Llama Materials.\n\n6\\. **Term and Termination**. The term of this Agreement will commence upon your acceptance of this Agreement or access to the Llama Materials and will continue in full force and effect until terminated in accordance with the terms and conditions herein. Meta may terminate this Agreement if you are in breach of any term or condition of this Agreement. Upon termination of this Agreement, you shall delete and cease use of the Llama Materials. Sections 3, 4 and 7 shall survive the termination of this Agreement. \n\n7\\. **Governing Law and Jurisdiction**. This Agreement will be governed and construed under the laws of the State of California without regard to choice of law principles, and the UN Convention on Contracts for the International Sale of Goods does not apply to this Agreement. The courts of California shall have exclusive jurisdiction of any dispute arising out of this Agreement.   \n",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "SimpleLicensingText",
+      "spdxId": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "licenseText": "**LLAMA 3.3 COMMUNITY LICENSE AGREEMENT**\n\n Llama 3.3 Version Release Date: December 6, 2024\n\n“**Agreement**” means the terms and conditions for use, reproduction, distribution and modification of the Llama Materials set forth herein.\n\n“**Documentation**” means the specifications, manuals and documentation accompanying Llama 3.3 distributed by Meta at [https://www.llama.com/docs/overview](https://llama.com/docs/overview).\n\n“**Licensee**” or “**you**” means you, or your employer or any other person or entity (if you are entering into this Agreement on such person or entity’s behalf), of the age required under applicable laws, rules or regulations to provide legal consent and that has legal authority to bind your employer or such other person or entity if you are entering in this Agreement on their behalf.\n\n“**Llama 3.3**” means the foundational large language models and software and algorithms, including machine-learning model code, trained model weights, inference-enabling code, training-enabling code, fine-tuning enabling code and other elements of the foregoing distributed by Meta at [https://www.llama.com/llama-downloads](https://www.llama.com/llama-downloads).\n\n“**Llama Materials**” means, collectively, Meta’s proprietary Llama 3.3 and Documentation (and any portion thereof) made available under this Agreement.\n\n“**Meta**” or “**we**” means Meta Platforms Ireland Limited (if you are located in or, if you are an entity, your principal place of business is in the EEA or Switzerland) and Meta Platforms, Inc. (if you are located outside of the EEA or Switzerland). \n\nBy clicking “I Accept” below or by using or distributing any portion or element of the Llama Materials, you agree to be bound by this Agreement.\n\n1\\. **License Rights and Redistribution**.\n\na. Grant of Rights. You are granted a non-exclusive, worldwide, non-transferable and royalty-free limited license under Meta’s intellectual property or other rights owned by Meta embodied in the Llama Materials to use, reproduce, distribute, copy, create derivative works of, and make modifications to the Llama Materials.  \n\nb. Redistribution and Use.  \n\ni. If you distribute or make available the Llama Materials (or any derivative works thereof), or a product or service (including another AI model) that contains any of them, you shall (A) provide a copy of this Agreement with any such Llama Materials; and (B) prominently display “Built with Llama” on a related website, user interface, blogpost, about page, or product documentation. If you use the Llama Materials or any outputs or results of the Llama Materials to create, train, fine tune, or otherwise improve an AI model, which is distributed or made available, you shall also include “Llama” at the beginning of any such AI model name.\n\nii. If you receive Llama Materials, or any derivative works thereof, from a Licensee as part of an integrated end user product, then Section 2 of this Agreement will not apply to you. \n\niii. You must retain in all copies of the Llama Materials that you distribute the following attribution notice within a “Notice” text file distributed as a part of such copies: “Llama 3.3 is licensed under the Llama 3.3 Community License, Copyright © Meta Platforms, Inc. All Rights Reserved.”\n\niv. Your use of the Llama Materials must comply with applicable laws and regulations (including trade compliance laws and regulations) and adhere to the Acceptable Use Policy for the Llama Materials (available at [https://www.llama.com/llama3\\_3/use-policy](https://www.llama.com/llama3_3/use-policy)), which is hereby incorporated by reference into this Agreement.  \n    \n2\\. **Additional Commercial Terms**. If, on the Llama 3.3 version release date, the monthly active users of the products or services made available by or for Licensee, or Licensee’s affiliates, is greater than 700 million monthly active users in the preceding calendar month, you must request a license from Meta, which Meta may grant to you in its sole discretion, and you are not authorized to exercise any of the rights under this Agreement unless or until Meta otherwise expressly grants you such rights.\n\n3**. Disclaimer of Warranty**. UNLESS REQUIRED BY APPLICABLE LAW, THE LLAMA MATERIALS AND ANY OUTPUT AND RESULTS THEREFROM ARE PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, AND META DISCLAIMS ALL WARRANTIES OF ANY KIND, BOTH EXPRESS AND IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE. YOU ARE SOLELY RESPONSIBLE FOR DETERMINING THE APPROPRIATENESS OF USING OR REDISTRIBUTING THE LLAMA MATERIALS AND ASSUME ANY RISKS ASSOCIATED WITH YOUR USE OF THE LLAMA MATERIALS AND ANY OUTPUT AND RESULTS.\n\n4\\. **Limitation of Liability**. IN NO EVENT WILL META OR ITS AFFILIATES BE LIABLE UNDER ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, TORT, NEGLIGENCE, PRODUCTS LIABILITY, OR OTHERWISE, ARISING OUT OF THIS AGREEMENT, FOR ANY LOST PROFITS OR ANY INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL, EXEMPLARY OR PUNITIVE DAMAGES, EVEN IF META OR ITS AFFILIATES HAVE BEEN ADVISED OF THE POSSIBILITY OF ANY OF THE FOREGOING.\n\n5\\. **Intellectual Property**.\n\na. No trademark licenses are granted under this Agreement, and in connection with the Llama Materials, neither Meta nor Licensee may use any name or mark owned by or associated with the other or any of its affiliates, except as required for reasonable and customary use in describing and redistributing the Llama Materials or as set forth in this Section 5(a). Meta hereby grants you a license to use “Llama” (the “Mark”) solely as required to comply with the last sentence of Section 1.b.i. You will comply with Meta’s brand guidelines (currently accessible at [https://about.meta.com/brand/resources/meta/company-brand/](https://about.meta.com/brand/resources/meta/company-brand/)[)](https://en.facebookbrand.com/). All goodwill arising out of your use of the Mark will inure to the benefit of Meta.\n\nb. Subject to Meta’s ownership of Llama Materials and derivatives made by or for Meta, with respect to any derivative works and modifications of the Llama Materials that are made by you, as between you and Meta, you are and will be the owner of such derivative works and modifications.\n\nc. If you institute litigation or other proceedings against Meta or any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Llama Materials or Llama 3.3 outputs or results, or any portion of any of the foregoing, constitutes infringement of intellectual property or other rights owned or licensable by you, then any licenses granted to you under this Agreement shall terminate as of the date such litigation or claim is filed or instituted. You will indemnify and hold harmless Meta from and against any claim by any third party arising out of or related to your use or distribution of the Llama Materials.\n\n6\\. **Term and Termination**. The term of this Agreement will commence upon your acceptance of this Agreement or access to the Llama Materials and will continue in full force and effect until terminated in accordance with the terms and conditions herein. Meta may terminate this Agreement if you are in breach of any term or condition of this Agreement. Upon termination of this Agreement, you shall delete and cease use of the Llama Materials. Sections 3, 4 and 7 shall survive the termination of this Agreement. \n\n7\\. **Governing Law and Jurisdiction**. This Agreement will be governed and construed under the laws of the State of California without regard to choice of law principles, and the UN Convention on Contracts for the International Sale of Goods does not apply to this Agreement. The courts of California shall have exclusive jurisdiction of any dispute arising out of this Agreement.   \n",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DESCRIBES",
+      "from": "SPDXRef-DOCUMENT",
+      "to": "SPDXRef-MODEL",
+      "relationshipType": "describes",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0000",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0000",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0001",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0001",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0002",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0002",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0003",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0003",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0004",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0004",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0005",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0005",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0006",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0006",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0007",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0007",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0008",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0008",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0009",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0009",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0010",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0010",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0011",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0011",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0012",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0012",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0013",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0013",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0014",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0014",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0015",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0015",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0016",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0016",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0017",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0017",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0018",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0018",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0019",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0019",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0020",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0020",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0021",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0021",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0022",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0022",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0023",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0023",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0024",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0024",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0025",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0025",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0026",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0026",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0027",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0027",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0028",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0028",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0029",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0029",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0030",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0030",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0031",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0031",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0032",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0032",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0033",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0033",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0034",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0034",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0035",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0035",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0036",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0036",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0037",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0037",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0038",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0038",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0039",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0039",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0040",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0040",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0041",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0041",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0042",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0042",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0043",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0043",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0044",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0044",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0045",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0045",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0046",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0046",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0047",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0047",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0048",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0048",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0049",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0049",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0050",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0050",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0051",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0051",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONTAINS-0052",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-FILE-0052",
+      "relationshipType": "contains",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-TORCH",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-TORCH",
+      "relationshipType": "dependsOn",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DEP-TRANSFORMERS",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-PKG-TRANSFORMERS",
+      "relationshipType": "dependsOn",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-DECLARED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-DECLARED",
+      "relationshipType": "hasDeclaredLicense",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "SPDXRef-REL-CONCLUDED",
+      "from": "SPDXRef-MODEL",
+      "to": "SPDXRef-LIC-MODEL-CONCLUDED",
+      "relationshipType": "hasConcludedLicense",
+      "creationInfo": {
+        "type": "CreationInfo",
+        "created": "2025-08-12T07:26:03Z",
+        "specVersion": "3.0.1",
+        "createdBy": [
+          {
+            "type": "Tool",
+            "spdxId": "SPDXRef-TOOL",
+            "name": "hf2spdx-ai-bom",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    }
+  ],
+  "rootElement": [
+    "SPDXRef-MODEL"
+  ],
+  "externalRef": [
+    {
+      "type": "ExternalRef",
+      "externalRefType": "arXiv",
+      "locator": "2204.05149"
+    }
+  ]
+}
